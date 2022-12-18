@@ -27,14 +27,27 @@ body{
 .signup-form input[type = 'radio']{
     margin: .5rem 0;
 }
+.signup-form input[type='text']{
+    width: 350px;
+}
+.signup-form input[type='email']{
+    width: 350px;
+}
+.signup-form input[type='number']{
+    width: 350px;
+}
+.signup-form input[type='password']{
+    width: 350px;
+}
 .submit-btn{
     margin-top: 1rem;
     background-color: white;
-    padding: .5rem 1rem;
+    padding: .5rem 2rem;
     color: #404EED;
     border: none;
     border-radius: 5px;
     font-size: large;
+    width: 100px;
 }
 .submit-btn:hover{
     cursor: pointer;

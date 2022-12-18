@@ -31,11 +31,12 @@ body{
 .submit-btn{
     margin-top: 1rem;
     background-color: white;
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
     color: #404EED;
     border: none;
     border-radius: 5px;
     font-size: large;
+    width: 100px;
 }
 .submit-btn:hover{
     cursor: pointer;
@@ -62,4 +63,10 @@ main a{
 }
 main a:hover{
     text-decoration: underline;
+}
+.signup-form input[type='password']{
+    width: 350px;
+}
+.signup-form input[type='email']{
+    width: 350px;
 }
