@@ -284,7 +284,10 @@ footer article label {
   text-decoration: none;
   color: white;
 }
-
+.login a{
+  text-decoration: none;
+  color: black;
+}
 
 @media (min-width: 1200px) and (max-width: 1505px) {
   .float-left img {
