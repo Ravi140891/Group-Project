@@ -280,6 +280,11 @@ footer article label {
   cursor: pointer;
   background-color: #404ee6c5;
 }
+.signup a{
+  text-decoration: none;
+  color: white;
+}
+
 
 @media (min-width: 1200px) and (max-width: 1505px) {
   .float-left img {

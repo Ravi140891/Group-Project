@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.form-container{
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    box-shadow: 0 0 20px 6px rgb(37, 37, 173);
+    background-color: #404EED;
+    color: white;
+    border-radius: 10px;
+}
+.signup-form input{
+    padding: .3rem .5rem;
+    margin-bottom: .5rem;
+}
+.signup-form input[type = 'radio']{
+    margin: .5rem 0;
+}
+.submit-btn{
+    margin-top: 1rem;
+    background-color: white;
+    padding: .5rem 1rem;
+    color: #404EED;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+.submit-btn:hover{
+    cursor: pointer;
+}
+.navbar{
+    height: max-content;
+    padding: 0;
+}
+h1{
+    margin: 2rem;
+    color: #404EED;
+}
