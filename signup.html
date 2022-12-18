@@ -56,6 +56,7 @@
       </nav>
     </header>
     <h1>Sign Up here</h1>
+    <h3 class="success">Congratulations! Your account is created successfully. Go to Login.</h3>
     <div class="form-container">
       <form class="signup-form">
         <label for="name">Name:</label> <br />
@@ -97,6 +98,7 @@
       const ageErr = document.querySelector(".age-err");
       const age = document.getElementById("age");
       const passErr = document.querySelector(".pass-err");
+      const successMsg = document.querySelector('.success');
 
       signUpForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -163,6 +165,7 @@
         localStorage.setItem("data", JSON.stringify(appData));
         console.log(appData);
         signUpForm.reset();
+        successMsg.style.display = 'block'
       });
     </script>
   </body>

@@ -67,3 +67,8 @@ h1{
 .signup-flex{
     padding: 0 1rem;
 }
+.success{
+    margin-bottom: 2rem;
+    color: green;
+    display: none;
+}
