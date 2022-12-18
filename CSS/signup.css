@@ -72,3 +72,10 @@ h1{
     color: green;
     display: none;
 }
+.success a{
+    color: green;
+    text-decoration: none;
+}
+.success a:hover{
+    text-decoration: underline;
+}
