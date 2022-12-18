@@ -64,7 +64,7 @@
         <p class="error name-err">Enter valid name</p>
         <label for="email">Email:</label><br />
         <input type="email" name="email" id="email" required /><br />
-        <p class="error mail-err">Enter a valid email</p>
+        <p class="error mail-err"></p>
         <label for="userid">User Id:</label><br />
         <input type="text" name="userid" id="userid" required /><br />
         <p class="error user-err">Sorry this user id is taken already!</p>
@@ -111,11 +111,25 @@
         }
 
         if ((email.value == "") && !email.value.match(validRegex)) {
+          mailErr.innerText = 'Please enter a valid email'
           mailErr.style.display = "block";
           setTimeout(() => {
             mailErr.style.display = "none";
+            mailErr.innerText = ''
           }, 1500);
           return;
+        } else if(email.value !== ''){
+          for(let i = 0; i < appData.length; i++){
+            if(appData[i].mail === email.value){
+              mailErr.innerText = "This email already exist in our records!"
+              mailErr.style.display = 'block'
+              setTimeout(()=>{
+                mailErr.style.display = 'none';
+                mailErr.innerText = ''
+              },1500);
+              return;
+            }
+          }
         }
         if (userId.value !== "") {
           for (let i = 0; i < appData.length; i++) {
