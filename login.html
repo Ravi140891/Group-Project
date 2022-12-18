@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS\login.css" />
     <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="stylesheet" href="CSS\login.css" />
     <!-- <script src="app.js" defer></script> -->
     <title>Login</title>
   </head>
   <body>
     <header class="navbar">
       <nav>
-        <div class="nav-flex">
+        <div class="nav-flex login-flex">
           <a href="/" class="logo">
             <img src="Images\Logo.jpg" alt="" fill="white" />
           </a>
@@ -73,34 +73,39 @@
       const loginId = document.getElementById("login-id");
       const loginPass = document.getElementById("login-pass");
       const loginForm = document.querySelector(".login-form");
-      const loginErr = document.querySelector('.login-err')
+      const loginErr = document.querySelector(".login-err");
 
       loginArr = JSON.parse(localStorage.getItem("data")) || [];
 
       loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        if(loginId.value !== '' && loginPass.value !== ''){
-        for(let i = 0; i < loginArr.length; i++){
-          if(loginArr[i].mail == loginId.value && loginArr[i].pass == loginPass.value ){
-            location.href = 'index.html'
-          }else{
-            loginErr.style.display = 'block'
-            setTimeout(()=>{
-              loginErr.style.display = 'none'
-            },1500)
+        if (loginId.value !== "" && loginPass.value !== "") {
+          for (var i = 0; i < loginArr.length; i++) {
+            if (
+              loginArr[i].mail == loginId.value &&
+              loginArr[i].pass == loginPass.value
+            ) {
+              return (location.href = "index.html");
+            }
           }
-          return
-        }
-      }
-      if(loginArr.length == 0){
-        loginErr.style.display = 'block'
-            setTimeout(()=>{
-              loginErr.style.display = 'none'
-            },1500)
-        loginForm.reset();
+          if (i == loginArr.length) {
+            loginErr.style.display = "block";
+            setTimeout(() => {
+              loginErr.style.display = "none";
+            }, 1500);
+            loginForm.reset();
             return;
-      }
-      })
+          }
+        }
+        if (loginArr.length == 0) {
+          loginErr.style.display = "block";
+          setTimeout(() => {
+            loginErr.style.display = "none";
+          }, 1500);
+          loginForm.reset();
+          return;
+        }
+      });
     </script>
   </body>
 </html>

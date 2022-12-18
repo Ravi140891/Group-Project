@@ -75,3 +75,6 @@ main a:hover{
 .login-form input[type='email']{
     width: 350px;
 }
+.login-flex{
+    padding: 0 1rem;
+}
