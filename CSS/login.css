@@ -21,11 +21,11 @@ body{
     border-radius: 10px;
     margin-top: 5rem;
 }
-.signup-form input{
+.login-form input{
     padding: .3rem .5rem;
     margin-bottom: .5rem;
 }
-.signup-form input[type = 'radio']{
+.login-form input[type = 'radio']{
     margin: .5rem 0;
 }
 .submit-btn{
@@ -64,9 +64,9 @@ main a{
 main a:hover{
     text-decoration: underline;
 }
-.signup-form input[type='password']{
+.login-form input[type='password']{
     width: 350px;
 }
-.signup-form input[type='email']{
+.login-form input[type='email']{
     width: 350px;
 }

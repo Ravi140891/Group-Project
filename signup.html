@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS\signup.css">
     <link rel="stylesheet" href="CSS\style.css">
+    <script src="app.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -58,20 +59,25 @@
     <div class="form-container">
         <form class="signup-form">
             <label for="name">Name:</label> <br>
-            <input type="text" name="name"> <br>
+            <input type="text" name="name" class="full-name" required> <br>
+            <p class="error name-err">Enter valid name</p>
             <label for="email">Email:</label><br>
-            <input type="email" name="email" id=""><br>
+            <input type="email" name="email" id="email" required><br>
+            <p class="error mail-err">Enter a valid email</p>
             <label for="userid">User Id:</label><br>
-            <input type="text" name="userid" id=""><br>
+            <input type="text" name="userid" id="userid" required><br>
+            <p class="error user-err">Sorry this user id is taken already!</p>
             <label for="age">Age:</label><br>
-            <input type="number" name="age" id=""><br>
+            <input type="number" name="age" id="age"><br>
+            <p class="error age-err"></p>
             <label for="gender">Gender:</label>
-            <input type="radio" name="gender" id=""> Male
-            <input type="radio" name="gender" id=""> Female <br>
+            <input type="radio" name="gender" id="male" required> Male
+            <input type="radio" name="gender" id="female" required> Female <br>
             <label for="password">Password:</label><br>
-            <input type="password" name="password" id=""><br>
+            <input type="password" name="password" id="pass" required><br>
             <label for="confirmpass">Confirm Password:</label><br>
-            <input type="text" name="confirmpass" id=""><br>
+            <input type="text" name="confirmpass" id="confirm" required><br>
+            <p class="error pass-err">Password do not match</p>
             <input type="submit" value="Submit" class="submit-btn">
         </form>
     </div>

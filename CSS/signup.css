@@ -60,3 +60,7 @@ h1{
     margin: 2rem;
     color: #404EED;
 }
+.error{
+    color: red;
+    display: none;
+}

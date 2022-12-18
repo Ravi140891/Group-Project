@@ -10,7 +10,7 @@
 header {
   width: 100%;
   height: min(500px, 65vh);
-  background-image: url("Images/Header-background.svg");
+  background-image: url("Images\Header-background.svg");
   background-position: center;
   background-size: cover;
   background-color: #404eed;
