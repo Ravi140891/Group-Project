@@ -98,12 +98,4 @@ signUpForm.addEventListener("submit", (e) => {
 
 // login page validation
 
-const loginId = document.getElementById('login-id')
-const loginPass = document.getElementById('login-pass')
-const loginForm = document.querySelector('.login-form')
 
-loginForm.addEventListener('submit', (e) => {
-  e.preventDefault()
-
-  window.location.replace = "signup.html";
-})
