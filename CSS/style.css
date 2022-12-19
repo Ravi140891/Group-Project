@@ -70,7 +70,7 @@ ul li {
   display: flex;
   min-width: 80%;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   align-items: center;
   margin: auto;
 }
