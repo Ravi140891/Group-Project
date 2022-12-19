@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="CSS\style2.css" />
+    <script src="JS\app.js" defer></script>
     <title>Discord</title>
   </head>
 
@@ -32,10 +33,9 @@
         </div>
         <div class="wrapper">
           <div class="home">
-            <div class="inner-div">
-              <i class="fa fa-home"></i> &nbsp
-              <h6>Home</h6>
-            </div>
+              <a href="app.html"
+                ><i class="fa fa-home"></i> &nbsp
+                <h6>Home</h6></a>
           </div>
           <div class="top-meta">
             <i class="fa fa-angle-down"></i> &nbsp
@@ -44,42 +44,41 @@
           <div class="lists">
             <ul>
               <li>
-             
-                <a href="http://"><i class="fa fa-bullhorn"></i> &nbsp
-                <p>announcements</p>
-                </a>
-             
-              </li>
-              <li>
-              
-                <a href="welcome.html"><i class="fa fa-hashtag"></i> &nbsp
-                <p>welcome</p>
-                </a>
-           
-              </li>
-              <li>
-                <a href="introduction.html"><i class="fa fa-hashtag"></i> &nbsp
-                <p>introductions</p></a>
-                
-              </li>
-              <li>
-                <a href="http://"><i class="fa fa-check-square"></i> &nbsp
-                <p>rules</p>
+                <a href="http://"
+                  ><i class="fa fa-bullhorn"></i> &nbsp
+                  <p>announcements</p>
                 </a>
               </li>
               <li>
-                
-                <a href="http://"><i class="fa fa-hashtag"></i> &nbsp
-                <p>faq</p>
+                <div class="inner-div">
+                <a href="http://"
+                  ><i class="fa fa-hashtag"></i> &nbsp
+                  <p>welcome</p>
                 </a>
-                
+                </div>
               </li>
               <li>
-                
-                <a href="http://"><i class="fa fa-hashtag"></i> &nbsp
-                <p>roles</p>
+                <a href="introduction.html"
+                  ><i class="fa fa-hashtag"></i> &nbsp
+                  <p>introductions</p></a>
+              </li>
+              <li>
+                <a href="rules.html"
+                  ><i class="fa fa-check-square"></i> &nbsp
+                  <p>rules</p>
                 </a>
-                
+              </li>
+              <li>
+                <a href="http://"
+                  ><i class="fa fa-hashtag"></i> &nbsp
+                  <p>faq</p>
+                </a>
+              </li>
+              <li>
+                <a href="http://"
+                  ><i class="fa fa-hashtag"></i> &nbsp
+                  <p>roles</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -89,8 +88,10 @@
         <nav>
           <div class="left">
             <div class="nav-home">
-              <i class="fa fa-home"></i> &nbsp
-              <h6>Home</h6>
+              <a href="welcome.html"
+                  ><i class="fa fa-hashtag"></i> &nbsp
+                  <p>welcome</p></a
+                >
             </div>
           </div>
           <div class="right">
@@ -104,11 +105,13 @@
           </div>
         </nav>
         <section class="mid-area">
-          <h5>Your Highlights</h5>
-          <div class="wrap-container">
-            <div class="left-side"></div>
-            <div class="right-side"></div>
-          </div>
+            <ul class="chat-box">
+
+            </ul>
+          <form class="input-area">
+            <i class="fa fa-plus-circle"></i>
+            <input type="text" placeholder="You do not have permission to write in this area." id="input-text" readonly style="cursor: not-allowed;"/>
+          </form>
         </section>
       </div>
     </main>
