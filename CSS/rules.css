@@ -1,0 +1,136 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #202225; */
+}
+body{
+    background-color: #202225;
+}
+.ruleHeader i{
+margin-right: 1vw;
+color: rgb(127, 125, 130);
+}
+.ruleHeader p{
+    padding-left: 2vw;
+    margin-top: 2vh;
+    height: 5vh;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgb(31, 31, 31);
+}
+.ruleWelcomeSec{
+    padding: 2vw;
+}
+.ruleWelcomeImages{
+    border-radius: 100%;
+    width: 4vw;
+    margin: 2% 1% 0% 1%;
+}
+.ruleWelcomeGreet{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.ruleWelcomeText{
+color: rgb(193, 189, 189);
+margin-top: 2vh;
+margin-bottom: 3vh;
+}
+.ruleStartDate{
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid rgb(66, 65, 65); 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+.ruleDate{
+    color: gray; 
+    padding:0 10px; 
+}
+.ruleThorImages{
+    border-radius: 100%;
+    width: 3vw;
+    margin: 1% 1% 0% 0%; 
+}
+.ruleThor{
+    display: flex;
+}
+.ruleThorTitle{
+    margin-left: 1vw;
+    color: gray;
+    font-size: 1rem;
+}
+.ruleThorTitle a{
+    color: gray;
+    text-decoration: none;
+}
+.ruleThorTitle a:hover{
+    text-decoration: underline;
+}
+.ruleBot{
+    background-color: rgb(47, 47, 157);
+    border-radius: 4px;
+    font-size: small;
+}
+.ruleEdit{
+    color: gray;
+    font-size: 1rem;
+}
+#rule-edit, .ruleThorFirstMessage{
+    margin-left: 4vw;
+}
+.ruleThorFirstMessage{
+    background-color: rgb(45, 45, 46);
+    border-left: 4px solid goldenrod;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+    font-size: small;
+}
+.ruleDetailLink{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.ruleStartHere{
+    background-color: rgb(45, 45, 46);
+}
+.ruleLink{
+    text-decoration: none;
+    color: rgb(1, 103, 255);
+    background-color: rgb(45, 45, 46);
+}
+.ruleThorFeaturedQueTitle{
+    width: 50%; 
+    text-align: center; 
+    border-bottom: 1px double rgb(66, 65, 65); 
+    line-height: 0.1em;
+    margin: 10px 0 5px;
+}
+.ruleFeatured{
+ font-weight: 900;
+}
+.ruleThorFeaturedQue{
+    width: 40%;
+    padding-bottom: 1vh;
+    background-color: rgb(45, 45, 46);
+}
+.ruleThorQuestionare{
+    background-color: rgb(45, 45, 46);
+}
+.ruleSection{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: rgb(45, 45, 46);
+}
+.ruleHeading{
+    font-weight: 900;
+    background-color: rgb(45, 45, 46);
+}
+.rulePara{
+    background-color: rgb(45, 45, 46);
+}
+.rulePara a, question a, .ruleThorFeaturedQueLink{
+    text-decoration: none;
+    color: rgb(1, 103, 255);
+    background-color: rgb(45, 45, 46);
+}
