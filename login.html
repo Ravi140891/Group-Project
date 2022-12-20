@@ -85,6 +85,8 @@
               loginArr[i].mail == loginId.value &&
               loginArr[i].pass == loginPass.value
             ) {
+              let localId = loginArr[i].id;
+              localStorage.setItem('userId', JSON.stringify(localId));
               return (location.href = "homepage.html");
             }
           }
