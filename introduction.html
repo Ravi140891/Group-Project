@@ -129,51 +129,7 @@
         </nav>
         <section class="mid-area">
           <ul class="chat-box">
-            <li class="user">
-              <span class="pic"
-                ><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""
-              /></span>
-              <div class="user-name">
-                <h4>User 1</h4>
-                <p>Hello Everyone</p>
-              </div>
-            </li>
-            <li class="user">
-              <span class="pic"
-                ><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""
-              /></span>
-              <div class="user-name">
-                <h4>User 2</h4>
-                <p>Hello Everyone</p>
-              </div>
-            </li>
-            <li class="user">
-              <span class="pic"
-                ><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""
-              /></span>
-              <div class="user-name">
-                <h4>User 3</h4>
-                <p>Hello Everyone</p>
-              </div>
-            </li>
-            <li class="user">
-              <span class="pic"
-                ><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""
-              /></span>
-              <div class="user-name">
-                <h4>User 4</h4>
-                <p>Hello Everyone</p>
-              </div>
-            </li>
-            <li class="user">
-              <span class="pic"
-                ><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""
-              /></span>
-              <div class="user-name">
-                <h4>User 4</h4>
-                <p>Hello Everyone</p> Time here
-              </div>
-            </li>
+            
           </ul>
           <form class="input-area">
             <i class="fa fa-plus-circle"></i>
@@ -194,29 +150,34 @@
       const date = new Date();
       let current = date.toLocaleString();
       let userId = JSON.parse(localStorage.getItem("userId"));
+      let userPic = JSON.parse(localStorage.getItem("userPic"));
       let message = JSON.parse(localStorage.getItem("message")) || [];
       let inputMsg = document.getElementById("input-text");
       let chatWindow = document.querySelector(".chat-box");
       const chatBox = document.querySelector(".input-area");
       render();
-
       function createItem(msg) {
         let listItem = document.createElement("li");
         listItem.classList.add("user");
-        listItem.innerHTML = `<span class="pic"><img src="Images\0c19d27f22fb38af7df8c5aa250d37b3.png" alt=""/></span><div class="user-name"><h4>${msg.id}</h4><p>${msg.text}</p><span>${msg.time}</span></div>`;
+        listItem.innerHTML = `<span class="profile-pic">${msg.pic}</span><div class="user-name"><h4>${msg.id}</h4><p>${msg.text}</p></div><span class="time">${msg.time}</span>`;
         chatWindow.appendChild(listItem);
       }
 
+      function autoScroll(){
+        chatWindow.lastElementChild.scrollIntoView({behavior:"smooth"})
+      }
       chatBox.addEventListener("submit", (e) => {
         e.preventDefault();
         const msg = {
           id: userId,
           text: inputMsg.value,
           time: current,
+          pic : userPic,
         };
         message.push(msg);
         localStorage.setItem("message", JSON.stringify(message));
         createItem(msg);
+        autoScroll();
         inputMsg.value = "";
       });
 

@@ -56,7 +56,10 @@
       </nav>
     </header>
     <h1>Sign Up here</h1>
-    <h3 class="success">Congratulations! Your account is created successfully. Go to <a href="login.html">Login</a></h3>
+    <h3 class="success">
+      Congratulations! Your account is created successfully. Go to
+      <a href="login.html">Login</a>
+    </h3>
     <div class="form-container">
       <form class="signup-form">
         <label for="name">Name:</label> <br />
@@ -98,7 +101,7 @@
       const ageErr = document.querySelector(".age-err");
       const age = document.getElementById("age");
       const passErr = document.querySelector(".pass-err");
-      const successMsg = document.querySelector('.success');
+      const successMsg = document.querySelector(".success");
 
       signUpForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -110,23 +113,23 @@
           return;
         }
 
-        if ((email.value == "") && !email.value.match(validRegex)) {
-          mailErr.innerText = 'Please enter a valid email'
+        if (email.value == "" && !email.value.match(validRegex)) {
+          mailErr.innerText = "Please enter a valid email";
           mailErr.style.display = "block";
           setTimeout(() => {
             mailErr.style.display = "none";
-            mailErr.innerText = ''
+            mailErr.innerText = "";
           }, 1500);
           return;
-        } else if(email.value !== ''){
-          for(let i = 0; i < appData.length; i++){
-            if(appData[i].mail === email.value){
-              mailErr.innerText = "This email already exist in our records!"
-              mailErr.style.display = 'block'
-              setTimeout(()=>{
-                mailErr.style.display = 'none';
-                mailErr.innerText = ''
-              },1500);
+        } else if (email.value !== "") {
+          for (let i = 0; i < appData.length; i++) {
+            if (appData[i].mail === email.value) {
+              mailErr.innerText = "This email already exist in our records!";
+              mailErr.style.display = "block";
+              setTimeout(() => {
+                mailErr.style.display = "none";
+                mailErr.innerText = "";
+              }, 1500);
               return;
             }
           }
@@ -168,19 +171,19 @@
           }, 1500);
           return;
         }
-        const date = new Date;
+        const date = new Date();
         let current = date.toLocaleString();
         let user = {
           nam: fullName.value,
           mail: email.value,
           id: userId.value,
           pass: password.value,
-          date : current,
+          date: current,
         };
         appData.push(user);
         localStorage.setItem("data", JSON.stringify(appData));
         signUpForm.reset();
-        successMsg.style.display = 'block'
+        successMsg.style.display = "block";
       });
     </script>
   </body>
