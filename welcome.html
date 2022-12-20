@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="CSS\style2.css" />
-    <script src="JS\app.js" defer></script>
+    <!-- <script src="JS\app.js" defer></script> -->
     <title>Discord</title>
   </head>
 
@@ -25,6 +25,7 @@
         <div class="user">
           <img src="Images\discord-v2-svgrepo-com.svg" alt="" />
         </div>
+        <div class="circleIconButton-1VxDrg" aria-label="Add a Server" role="treeitem" data-list-item-id="guildsnav___create-join-button" tabindex="-1"><svg class="circleIcon-3489FI" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11.1111H12.8889V4H11.1111V11.1111H4V12.8889H11.1111V20H12.8889V12.8889H20V11.1111Z"></path></svg></div>
       </aside>
       <div class="channel-sidebar">
         <div class="channel">
@@ -106,7 +107,7 @@
         </nav>
         <section class="mid-area">
             <ul class="chat-box">
-
+                <!-- <li><i class="fa fa-long-arrow-right"></i> Welcome, <span>User 1</span> to our server. &nbsp<span class="time">time here</span></li> -->
             </ul>
           <form class="input-area">
             <i class="fa fa-plus-circle"></i>
@@ -115,5 +116,19 @@
         </section>
       </div>
     </main>
+    <script>
+      user = JSON.parse(localStorage.getItem("data")) || [];
+      const chatBox = document.querySelector('.chat-box');
+      render();
+
+      function createList(item){
+        let listItem = document.createElement('li');
+        listItem.innerHTML = `<i class="fa fa-long-arrow-right"></i> Welcome, <span>${item.id}</span> to our server &nbsp<span class ="time">${item.date}</span>`
+        chatBox.appendChild(listItem);
+      }
+      function render(){
+        user.forEach((item) => createList(item))
+      }
+    </script>
   </body>
 </html>
