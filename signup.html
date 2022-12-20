@@ -168,12 +168,14 @@
           }, 1500);
           return;
         }
-
+        const date = new Date;
+        let current = date.toLocaleString();
         let user = {
           nam: fullName.value,
           mail: email.value,
           id: userId.value,
           pass: password.value,
+          date : current,
         };
         appData.push(user);
         localStorage.setItem("data", JSON.stringify(appData));
