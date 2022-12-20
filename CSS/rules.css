@@ -30,11 +30,11 @@ main{
 }
 .channel-sidebar{
     width: min(15vw, 500px);
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #25272c;
+    background-color: #2F3136;
     color: white;
+    height: 100vh;
     font-family: sans-serif;
 }
 .wrapper{
