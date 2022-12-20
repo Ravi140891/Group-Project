@@ -1,29 +1,255 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2C2E33;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: #202225; */
+    font-family: sans-serif;
 }
-body{
+aside{
+    max-width: min(3vw, 80px);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: .3rem;
     background-color: #202225;
 }
-.ruleHeader i{
-margin-right: 1vw;
-color: rgb(127, 125, 130);
+main{
+    display: flex;
 }
-.ruleHeader p{
-    padding-left: 2vw;
-    margin-top: 2vh;
-    height: 5vh;
-    font-size: 1.4rem;
-    border-bottom: 1px solid rgb(31, 31, 31);
+.user{
+    max-width: 90%;
+    margin-top: .5rem;
 }
+.user img{
+    max-width: 100%;
+}
+.channel-sidebar{
+    width: min(15vw, 500px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #25272c;
+    color: white;
+    font-family: sans-serif;
+}
+.wrapper{
+    padding: 0 .5rem;
+}
+.channel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: .5rem;
+}
+.home .fa{
+    color: #8E9297;
+}
+.inner-div{
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 4px;
+    width: 100%;
+}
+.home{
+    padding: .5rem;
+    border-bottom: 1px solid grey;
+}
+.home h6{
+    color: white;
+    font-size: small;
+}
+.main-logo{
+    border-bottom: 1px solid grey;
+    padding-bottom: 3px;
+}
+.top-meta{
+    color: rgb(153, 151, 151);
+    font-size: 9px;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: -.5rem;
+}
+.lists ul li{
+    display: flex;
+    align-items: center;
+    margin-top: .8rem;
+}
+.lists .fa{
+    color: grey;
+}
+nav{
+    width: 100%;
+    background-color: #2C2E33;
+    height: max-content;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+}
+.left{
+    max-width: 10%;
+    padding: .4rem;
+}
+.nav-home{
+    display: flex;
+    align-items: center;
+}
+.nav-home .fa{
+    color: #8E9297;
+}
+.nav-home h6{
+    color: white;
+    font-size: 1rem;
+}
+nav .fa{
+    color: #8E9297;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right input{
+    background-color: black;
+    border: none;
+    padding: .3rem;
+    margin-left: .6rem;
+    max-width: 120px;
+    outline: none;
+    color: white;
+}
+.right .fa-search{
+    position: relative;
+    right: 1.5rem;
+    font-size: small;
+}
+.fa-inbox{
+    margin:0 .5rem;
+    margin-left: -.5rem;
+    font-size: larger;
+}
+.fa-question-circle{
+    font-size: larger;
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.mid-area{
+    height: 100%;
+    background-color: #2C2E33;
+    width: 100%;
+    padding: 1.5rem;
+}
+.mid-area h5{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.wrap-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+}
+.left-side{
+    height: 100%;
+    margin-top: 1rem;
+    width: 65%;
+    background-color: #36393F;
+}
+.right-side{
+    height: 90%;
+    width: 30%;
+    background-color: #36393F;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+.input-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5rem;
+}
+.input-area input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #40444B;
+    border: none;
+    padding:0 3rem;
+    color: white;
+    outline: none;
+}
+.input-area .fa-plus-circle{
+    color: lightgray;
+    font-size: x-large;
+    position: relative;
+    left: 2rem;
+}
+.fa-gift{
+    color: lightgray;
+    font-size: x-large;
+    position: relative;
+    right: 3rem;
+}
+.gif{
+    position: relative;
+    right: 9rem;
+}
+.sticker{
+    position: relative;
+    right: 8rem;
+}
+.smily{
+    position: relative;
+    right: 7rem;
+}
+.chat-box{
+    color: white;
+}
+.chat-box li{
+    list-style: none;
+    margin-bottom: .5rem;
+    margin-left: .3rem;
+}
+.pic img{
+    width: 38px;
+    border-radius: 50%;
+    margin-right: .8rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+
+
+ 
+ /* ========================================================================================rule PAGE =================================================================*/
 .ruleWelcomeSec{
-    padding: 2vw;
+   height: 87vh;
+   overflow: scroll;
 }
 .ruleWelcomeImages{
     border-radius: 100%;
     width: 4vw;
-    margin: 2% 1% 0% 1%;
+    margin: 0% 1% 0% 1%;
 }
 .ruleWelcomeGreet{
     font-size: 1.8rem;
@@ -34,103 +260,163 @@ color: rgb(193, 189, 189);
 margin-top: 2vh;
 margin-bottom: 3vh;
 }
-.ruleStartDate{
-    width: 100%; 
-   text-align: center; 
-   border-bottom: 1px solid rgb(66, 65, 65); 
-   line-height: 0.1em;
-   margin: 10px 0 20px;
-}
-.ruleDate{
-    color: gray; 
-    padding:0 10px; 
-}
-.ruleThorImages{
-    border-radius: 100%;
-    width: 3vw;
-    margin: 1% 1% 0% 0%; 
-}
-.ruleThor{
-    display: flex;
-}
-.ruleThorTitle{
-    margin-left: 1vw;
-    color: gray;
-    font-size: 1rem;
-}
-.ruleThorTitle a{
-    color: gray;
-    text-decoration: none;
-}
-.ruleThorTitle a:hover{
-    text-decoration: underline;
-}
-.ruleBot{
-    background-color: rgb(47, 47, 157);
-    border-radius: 4px;
-    font-size: small;
-}
-.ruleEdit{
-    color: gray;
-    font-size: 1rem;
-}
-#rule-edit, .ruleThorFirstMessage{
-    margin-left: 4vw;
-}
-.ruleThorFirstMessage{
-    background-color: rgb(45, 45, 46);
-    border-left: 4px solid goldenrod;
-    border-radius: 5px;
-    padding: 10px;
-    width: 40%;
-    font-size: small;
-}
-.ruleDetailLink{
-    display: flex;
-    flex-direction: column;
+.ruleHeader i{
+    margin-right: 1vw;
+    color: rgb(127, 125, 130);
+    }
+    .ruleHeader p{
+        padding-left: 2vw;
+        margin-top: 2vh;
+        height: 5vh;
+        font-size: 1.4rem;
+        border-bottom: 1px solid rgb(31, 31, 31);
+    }
+    .ruleWelcomeSec{
+        padding: 0 2vw;
+    }
+    .ruleWelcomeImages{
+        border-radius: 100%;
+        width: 4vw;
+        margin: 2% 1% 0% 1%;
+    }
+    .ruleWelcomeGreet{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .ruleWelcomeText{
+    color: rgb(193, 189, 189);
     margin-top: 2vh;
     margin-bottom: 3vh;
+    }
+    .ruleStartDate{
+        width: 100%; 
+       text-align: center; 
+       border-bottom: 1px solid rgb(66, 65, 65); 
+       line-height: 0.1em;
+       margin: 10px 0 20px;
+    }
+    .ruleDate{
+        color: gray; 
+        padding:0 10px; 
+    }
+    .ruleThorImages{
+        border-radius: 100%;
+        width: 3vw;
+        margin: 1% 1% 0% 0%; 
+    }
+    .ruleThor{
+        display: flex;
+    }
+    .ruleThorTitle{
+        margin-left: 1vw;
+        color: gray;
+        font-size: 1rem;
+    }
+    .ruleThorTitle a{
+        color: gray;
+        text-decoration: none;
+    }
+    .ruleThorTitle a:hover{
+        text-decoration: underline;
+    }
+    .ruleBot{
+        background-color: rgb(47, 47, 157);
+        border-radius: 4px;
+        font-size: small;
+    }
+    .ruleEdit{
+        color: gray;
+        font-size: 1rem;
+    }
+    #rule-edit, .ruleThorFirstMessage{
+        margin-left: 4vw;
+    }
+    .ruleThorFirstMessage{
+        
+        background-color: rgb(45, 45, 46);
+        border-left: 4px solid goldenrod;
+        border-radius: 5px;
+        padding: 10px;
+        width: 40%;
+        font-size: small;
+    }
+    .ruleDetailLink{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+    }
+    .ruleStartHere{
+        background-color: rgb(45, 45, 46);
+    }
+    .ruleLink{
+        text-decoration: none;
+        color: rgb(1, 103, 255);
+        background-color: rgb(45, 45, 46);
+    }
+    .ruleThorFeaturedQueTitle{
+        width: 50%; 
+        text-align: center; 
+        border-bottom: 1px double rgb(66, 65, 65); 
+        line-height: 0.1em;
+        margin: 10px 0 5px;
+    }
+    .ruleFeatured{
+     font-weight: 900;
+    }
+    .ruleThorFeaturedQue{
+        width: 40%;
+        padding-bottom: 1vh;
+        background-color: rgb(45, 45, 46);
+    }
+    .ruleThorQuestionare{
+        background-color: rgb(45, 45, 46);
+    }
+    .ruleSection{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        background-color: rgb(45, 45, 46);
+    }
+    .ruleHeading{
+        font-weight: 900;
+        background-color: rgb(45, 45, 46);
+    }
+    .rulePara{
+        background-color: rgb(45, 45, 46);
+    }
+    .rulePara a, question a, .ruleThorFeaturedQueLink{
+        text-decoration: none;
+        color: rgb(1, 103, 255);
+        background-color: rgb(45, 45, 46);
+    }
+
+
+
+
+/* ======================================================================media query================================================================================== */
+
+@media screen and (max-width: 490px) {
+    .ruleThorFirstMessage{
+        width: 90%;
+        margin-top: 10px;
+    }
+    #rule-edit{
+        display: none;
+    } 
+    .channel-sidebar, .fa-refresh, .search, .fa-inbox, .fa-question-circle{
+        display: none;
+    }
+    aside{
+        display: none; 
+    }
+    .fa-bars{
+        display: block;
+    }
+    .respIcon{
+        float: right;
+        display: flex;
+        width: 20%;
+    }
 }
-.ruleStartHere{
-    background-color: rgb(45, 45, 46);
-}
-.ruleLink{
-    text-decoration: none;
-    color: rgb(1, 103, 255);
-    background-color: rgb(45, 45, 46);
-}
-.ruleThorFeaturedQueTitle{
-    width: 50%; 
-    text-align: center; 
-    border-bottom: 1px double rgb(66, 65, 65); 
-    line-height: 0.1em;
-    margin: 10px 0 5px;
-}
-.ruleFeatured{
- font-weight: 900;
-}
-.ruleThorFeaturedQue{
-    width: 40%;
-    padding-bottom: 1vh;
-    background-color: rgb(45, 45, 46);
-}
-.ruleThorQuestionare{
-    background-color: rgb(45, 45, 46);
-}
-.ruleSection{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    background-color: rgb(45, 45, 46);
-}
-.ruleHeading{
-    font-weight: 900;
-    background-color: rgb(45, 45, 46);
-}
-.rulePara{
-    background-color: rgb(45, 45, 46);
-}
-.rulePara a, question a, .ruleThorFeaturedQueLink{
-    text-decoration: none;
-    color: rgb(1, 103, 255);
-    background-color: rgb(45, 45, 46);
-}
+
+
