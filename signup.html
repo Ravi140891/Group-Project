@@ -75,8 +75,8 @@
         <input type="number" name="age" id="age" /><br />
         <p class="error age-err"></p>
         <label for="gender">Gender:</label>
-        <input type="radio" name="gender" id="male" required /> Male
-        <input type="radio" name="gender" id="female" required /> Female <br />
+        <input type="radio" name="gender" value="male" required /> Male
+        <input type="radio" name="gender" value="female" required /> Female <br />
         <label for="password">Password:</label><br />
         <input type="password" name="password" id="pass" required /><br />
         <label for="confirmpass">Confirm Password:</label><br />
@@ -95,13 +95,14 @@
       const confirmPass = document.getElementById("confirm");
       const nameErr = document.querySelector(".name-err");
       const mailErr = document.querySelector(".mail-err");
-      var validRegex =
-        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       const userErr = document.querySelector(".user-err");
       const ageErr = document.querySelector(".age-err");
       const age = document.getElementById("age");
       const passErr = document.querySelector(".pass-err");
       const successMsg = document.querySelector(".success");
+      const gender = document.getElementsByName('gender');
+      let genderValue;
 
       signUpForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -111,6 +112,12 @@
             nameErr.style.display = "none";
           }, 1500);
           return;
+        }
+
+        for(let i = 0; i < gender.length; i++){
+          if(gender[i].checked){
+            genderValue = gender[i].value;
+          }
         }
 
         if (email.value == "" && !email.value.match(validRegex)) {
@@ -179,6 +186,7 @@
           id: userId.value,
           pass: password.value,
           date: current,
+          gender : genderValue,
         };
         appData.push(user);
         localStorage.setItem("data", JSON.stringify(appData));

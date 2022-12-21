@@ -86,9 +86,9 @@
               loginArr[i].pass == loginPass.value
             ) {
               let localId = loginArr[i].id;
-              let userPic = loginArr[i].nam.charAt(0).toUpperCase();
+              let gender = loginArr[i].gender;
               localStorage.setItem("userId", JSON.stringify(localId));
-              localStorage.setItem("userPic", JSON.stringify(userPic));
+              localStorage.setItem("gender", JSON.stringify(gender));
               return (location.href = "homepage.html");
             }
           }
