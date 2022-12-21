@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 aside {
-  max-width: min(3vw, 100px);
+  max-width: min(4vw, 70px);
   display: flex;
   flex-direction: column;
   padding: 0.3rem;
@@ -265,8 +265,8 @@ a {
   -webkit-box-pack: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 35px;
-  height: 35px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   color: green;
   background-color: #36393f;
