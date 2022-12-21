@@ -25,7 +25,27 @@
         <div class="user">
           <img src="Images\discord-v2-svgrepo-com.svg" alt="" />
         </div>
-        <div class="circleIconButton-1VxDrg" aria-label="Add a Server" role="treeitem" data-list-item-id="guildsnav___create-join-button" tabindex="-1"><svg class="circleIcon-3489FI" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11.1111H12.8889V4H11.1111V11.1111H4V12.8889H11.1111V20H12.8889V12.8889H20V11.1111Z"></path></svg></div>
+        <div
+          class="circleIconButton-1VxDrg"
+          aria-label="Add a Server"
+          role="treeitem"
+          data-list-item-id="guildsnav___create-join-button"
+          tabindex="-1"
+        >
+          <svg
+            class="circleIcon-3489FI"
+            aria-hidden="true"
+            role="img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M20 11.1111H12.8889V4H11.1111V11.1111H4V12.8889H11.1111V20H12.8889V12.8889H20V11.1111Z"
+            ></path>
+          </svg>
+        </div>
       </aside>
       <div class="channel-sidebar">
         <div class="channel">
@@ -34,9 +54,10 @@
         </div>
         <div class="wrapper">
           <div class="home">
-              <a href="app.html"
-                ><i class="fa fa-home"></i> &nbsp
-                <h6>Home</h6></a>
+            <a href="app.html"
+              ><i class="fa fa-home"></i> &nbsp
+              <h6>Home</h6></a
+            >
           </div>
           <div class="top-meta">
             <i class="fa fa-angle-down"></i> &nbsp
@@ -52,16 +73,17 @@
               </li>
               <li>
                 <div class="inner-div">
-                <a href="http://"
-                  ><i class="fa fa-hashtag"></i> &nbsp
-                  <p>welcome</p>
-                </a>
+                  <a href="welcome.html"
+                    ><i class="fa fa-hashtag"></i> &nbsp
+                    <p>welcome</p>
+                  </a>
                 </div>
               </li>
               <li>
                 <a href="introduction.html"
                   ><i class="fa fa-hashtag"></i> &nbsp
-                  <p>introductions</p></a>
+                  <p>introductions</p></a
+                >
               </li>
               <li>
                 <a href="rules.html"
@@ -70,13 +92,13 @@
                 </a>
               </li>
               <li>
-                <a href="http://"
+                <a href="faqgrp.html"
                   ><i class="fa fa-hashtag"></i> &nbsp
                   <p>faq</p>
                 </a>
               </li>
               <li>
-                <a href="http://"
+                <a href="rolesgrp.html"
                   ><i class="fa fa-hashtag"></i> &nbsp
                   <p>roles</p>
                 </a>
@@ -90,8 +112,9 @@
           <div class="left">
             <div class="nav-home">
               <a href="welcome.html"
-                  ><i class="fa fa-hashtag"></i> &nbsp
-                  <p>welcome</p></a>
+                ><i class="fa fa-hashtag"></i> &nbsp
+                <p>welcome</p></a
+              >
             </div>
           </div>
           <div class="right">
@@ -105,28 +128,34 @@
           </div>
         </nav>
         <section class="mid-area">
-            <ul class="chat-box">
-                <!-- <li><i class="fa fa-long-arrow-right"></i> Welcome, <span>User 1</span> to our server. &nbsp<span class="time">time here</span></li> -->
-            </ul>
+          <ul class="chat-box">
+            <!-- <li><i class="fa fa-long-arrow-right"></i> Welcome, <span>User 1</span> to our server. &nbsp<span class="time">time here</span></li> -->
+          </ul>
           <form class="input-area">
             <i class="fa fa-plus-circle"></i>
-            <input type="text" placeholder="You do not have permission to write in this area." id="input-text" readonly style="cursor: not-allowed;"/>
+            <input
+              type="text"
+              placeholder="You do not have permission to write in this area."
+              id="input-text"
+              readonly
+              style="cursor: not-allowed"
+            />
           </form>
         </section>
       </div>
     </main>
     <script>
       user = JSON.parse(localStorage.getItem("data")) || [];
-      const chatBox = document.querySelector('.chat-box');
+      const chatBox = document.querySelector(".chat-box");
       render();
 
-      function createList(item){
-        let listItem = document.createElement('li');
-        listItem.innerHTML = `<i class="fa fa-long-arrow-right"></i> Welcome, <span>${item.id}</span> to our server &nbsp<span class ="time">${item.date}</span>`
+      function createList(item) {
+        let listItem = document.createElement("li");
+        listItem.innerHTML = `<i class="fa fa-long-arrow-right"></i> Welcome, <span>${item.id}</span> to our server &nbsp<span class ="time">${item.date}</span>`;
         chatBox.appendChild(listItem);
       }
-      function render(){
-        user.forEach((item) => createList(item))
+      function render() {
+        user.forEach((item) => createList(item));
       }
     </script>
   </body>
