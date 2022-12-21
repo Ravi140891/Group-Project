@@ -15,14 +15,19 @@ body{
     align-items: center;
     padding: 2rem;
     margin: auto;
-    box-shadow: 0 0 20px 6px rgb(37, 37, 173);
+    box-shadow: 0 0 10px 3px rgb(37, 37, 173);
     background-color: #404EED;
     color: white;
     border-radius: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
 }
 .signup-form input{
     padding: .3rem .5rem;
     margin-bottom: .5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
 }
 .signup-form input[type = 'radio']{
     margin: .5rem 0;
