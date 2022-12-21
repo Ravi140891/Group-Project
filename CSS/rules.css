@@ -271,11 +271,12 @@ a{
  /* ========================================================================================rule PAGE =================================================================*/
 .ruleWelcomeSec{
    height: 87vh;
-   overflow: scroll;
+   overflow-y: scroll;
 }
 .ruleWelcomeImages{
     border-radius: 100%;
-    width: 4vw;
+    width: 3rem;
+    height: 3rem;
     margin: 0% 1% 0% 1%;
 }
 .ruleWelcomeGreet{
@@ -364,7 +365,7 @@ margin-bottom: 3vh;
         border-left: 4px solid goldenrod;
         border-radius: 5px;
         padding: 10px;
-        width: 40%;
+        width: 50%;
         font-size: small;
     }
     .ruleDetailLink{
@@ -392,8 +393,9 @@ margin-bottom: 3vh;
      font-weight: 900;
     }
     .ruleThorFeaturedQue{
-        width: 40%;
+        width: 60%;
         padding-bottom: 1vh;
+        border: 2px solid red;
         background-color: rgb(45, 45, 46);
     }
     .ruleThorQuestionare{
@@ -405,11 +407,14 @@ margin-bottom: 3vh;
         background-color: rgb(45, 45, 46);
     }
     .ruleHeading{
-        font-weight: 900;
+        font-weight: 700;
+        font-size: large;
         background-color: rgb(45, 45, 46);
     }
     .rulePara{
         background-color: rgb(45, 45, 46);
+        font-size: small;
+        font-weight: 50;
     }
     .rulePara a, question a, .ruleThorFeaturedQueLink{
         text-decoration: none;
