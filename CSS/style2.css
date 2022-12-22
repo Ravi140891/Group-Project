@@ -298,7 +298,7 @@ a {
 }
 .chat-box{
   height: 83vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .icon svg{
   width: 15px;
