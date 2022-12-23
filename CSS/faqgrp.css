@@ -430,3 +430,7 @@ margin-bottom: 3vh;
         width: 20%;
     }
 }
+
+.last_modal_container, .modal_container, .modal2_container{
+    color: black;
+}

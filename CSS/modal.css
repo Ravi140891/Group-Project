@@ -17,6 +17,16 @@ body{
   .userBtn img {
     max-width: 100%;
   }
+  .the_odin_pro{
+    max-width: 90%;
+    margin-top: 0.5rem;
+    background-color: #202225;
+    border: none;
+    cursor: pointer;
+  }
+  .the_odin_pro{
+    max-width: 100%;
+  }
   .liItems{
     width: 100%;
     /* border: 2px solid red; */

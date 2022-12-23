@@ -8,7 +8,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="CSS\welcome.css" />
+    <link rel="stylesheet" href="CSS/modal.css">
     <!-- <script src="JS\app.js" defer></script> -->
     <title>Discord</title>
   </head>
@@ -16,7 +26,7 @@
   <body>
     <main>
       <aside>
-        <div class="user main-logo">
+        <!-- <div class="user main-logo">
           <img src="Images\discord-v2-svgrepo-com.svg" alt="" />
         </div>
         <div class="user">
@@ -24,7 +34,19 @@
         </div>
         <div class="user">
           <img src="Images\discord-v2-svgrepo-com.svg" alt="" />
-        </div>
+        </div> -->
+
+        <ul class="user_logo">
+          <li class="logo_list_item"><div class="user main-logo">
+            <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
+          </div></li>
+          <li class="logo_list_item"><div class="user">
+            <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
+          </div></li>
+          <li class="logo_list_item"><button class="userBtn">
+            <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="the_odin_pro" />
+          </button></li>
+        </ul>
         <div
           class="circleIconButton-1VxDrg"
           aria-label="Add a Server"
@@ -143,6 +165,96 @@
           </form>
         </section>
       </div>
+
+
+      <div class="modal_container">
+        <div class="modal_inner_container">
+          <button class="modal_close_icon"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+          <h2 class="modal_heading">Create a server</h2>
+          <pre class="modal_para">Your server is where you and your friends hang out.
+            Make yours and start talking.</pre>
+          <div class="modal_templet">
+            <div class="modal_left">
+              <img src="Images/modal_image.svg">
+              <h4>Create My Own</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <H4>START FROM A TEMPLATE</h4>
+          <div class="modal_templet">
+            <div class="modal_left">
+              <img src="Images/modal_image2.svg">
+              <h4>Gaming</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="modal_templet">
+            <div class="modal_left">
+              <img src="Images/modal_image3.svg">
+              <h4>School</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="modal_templet">
+            <div class="modal_left">
+              <img src="Images/modal_image4.svg">
+              <h4>Study Group</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <h4>Already have a invite?</h4>
+          <button class="dummy_button">Join a Server</button>
+        </div>
+      </div>
+    
+      <div class="modal2_container">
+        <div class="modal2_inner_container">
+          <button class="modal2_close_icon"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+          <h2 class="modal2_heading">Tell us more about your server</h2>
+          <pre class="modal2_para">In order to help you setup, is your new server for 
+          just a few friends or a larger community?</pre>
+          <div class="modal2_templet">
+            <div class="modal2_left">
+              <img src="Images/modal2_image1.svg">
+              <h4>For a club or community</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="modal2_templet">
+            <div class="modal2_left">
+              <img src="Images/modal2_image2.svg">
+              <h4>For me and my friends</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="modal2_nav">
+            <button class="modal2_back_btn">Back</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="last_modal_container">
+        <div class="last_modal_inner_container">
+          <button class="last_modal_close_icon"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+          <h2 class="last_modal_heading">Customise your server</h2>
+          <pre class="last_modal_para">Give your new server a personality with a name.
+            You can always change it later.
+          </pre>
+          <div class="last_modal_logo">
+            <img src="Images\discord-v2-svgrepo-com.svg" alt="" />
+          </div>
+          <form class="modal_form" method="dialog">
+            <b>SERVER NAME</b><br>
+            <input type="text" placeholder="Your Name" class="modal_form_input"><br><br>
+            <div class="modal_nav">
+              <button class="last_modal_back_btn">Back</button>
+              <input type="submit" value="Create" class="modal_create_btn">  
+            </div>
+          </form>
+        </div>
+      </div>
+
+
     </main>
     <script>
       user = JSON.parse(localStorage.getItem("data")) || [];
@@ -159,4 +271,5 @@
       }
     </script>
   </body>
+  <script src="add.js"></script>
 </html>
