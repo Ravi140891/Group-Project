@@ -29,9 +29,9 @@
           <li class="logo_list_item"><div class="user">
             <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
           </div></li>
-          <li class="logo_list_item"><a href="app.html"><button class="userBtn">
-            <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
-          </button></a></li>
+          <li class="logo_list_item"><button class="userBtn">
+            <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="the_odin_pro" />
+          </button></li>
         </ul>
         <div
           class="circleIconButton-1VxDrg"
@@ -261,17 +261,17 @@
 
 
 
-      <!-- <script src="JS/modal.js"></script> -->
-      <script src="add.js"></script>
+      
+      
       <script>
         const changeName = document.querySelector('.change_name')
         const changeUserName = document.querySelector('.change_userName')
         let title = JSON.parse(localStorage.getItem('obj'));
-        console.log(title.name);
         changeName.innerText = title.name;
         changeUserName.innerText = title.name;
         localStorage.setItem('obj', JSON.stringify({}));
       </script>
     </main>
+    <script src="add.js"></script>
   </body>
 </html>
