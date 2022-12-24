@@ -102,7 +102,7 @@ function createListItem(logoObj){
     listEle.innerHTML = 
     `<button class="userBtn">
     <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
-    <span class="serverNameHover"></span>
+    <span class="serverNameHover">${logoObj.name}</span>
     </button>`
     userLogo.appendChild(listEle);
     dataForm.reset();
@@ -123,7 +123,7 @@ function createEnviornment(event){
 }
 
 function openOdinProj(event){
-    location.href="rules.html";
+    location.href="app.html";
 }
 
 
@@ -146,12 +146,10 @@ userLogo.addEventListener('click',(event)=>{
          openOdinProj(event);
       }
 });
-userLogo.addEventListener('mouseover', (event)=>
-{
-    if(event.target.classList.contains('logo_list_item'))
-    {
-    console.log(event.target.id);
-        //serverNameHover.innerText=event.target.id;
-    }
-
-})
+// userLogo.addEventListener('mouseout', (event)=>
+// {
+//     console.log(event.target.classList);
+//     if(event.target.classList.contains("logo_list_item"))
+//     serverNameHover.style.display="block";
+// }
+// )
