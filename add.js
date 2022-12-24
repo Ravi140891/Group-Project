@@ -16,12 +16,23 @@ const lastModalContainer = document.querySelector('.last_modal_container')
 const dataForm = document.querySelector('.modal_form')
 const userName = document.querySelector('.modal_form_input');
 const userBtn = document.querySelector('.userBtn');
+const serverNameHover = document.querySelector('.serverNameHover');
 
 
 logoArr = JSON.parse(localStorage.getItem('logoArr'))??[];
 logoArr.map((ele)=>{
     createListItem(ele);
 })
+
+//========================================Display server name=======================================================
+// const changeName = document.querySelector('.server_name')
+// const changeUserName = document.querySelector('.server_userName')
+// let title = JSON.parse(localStorage.getItem('obj'));
+// changeName.innerText = title.name;
+// changeUserName.innerText = title.name;
+//localStorage.setItem('obj', JSON.stringify({}));
+
+
 
 //===============================================Modal box 1==============================================================
 openModal.addEventListener('click', ()=>
@@ -91,6 +102,7 @@ function createListItem(logoObj){
     listEle.innerHTML = 
     `<button class="userBtn">
     <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
+    <span class="serverNameHover"></span>
     </button>`
     userLogo.appendChild(listEle);
     dataForm.reset();
@@ -122,6 +134,7 @@ function openOdinProj(event){
 
 
 
+
 dataForm.addEventListener('submit', addLogoItem);
 userLogo.addEventListener('click',(event)=>{
      if(event.target.classList.contains("envi"))
@@ -133,3 +146,12 @@ userLogo.addEventListener('click',(event)=>{
          openOdinProj(event);
       }
 });
+userLogo.addEventListener('mouseover', (event)=>
+{
+    if(event.target.classList.contains('logo_list_item'))
+    {
+    console.log(event.target.id);
+        //serverNameHover.innerText=event.target.id;
+    }
+
+})

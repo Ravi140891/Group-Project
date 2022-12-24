@@ -49,16 +49,7 @@ body{
   .fa-sharp{
     color: grey;
   }
-  .xyz{
-    position: absolute;
-    /* border: 2px solid red; */
-    top: 20%;
-    left: 40%;
-    font-size: 2rem;
-    font-weight: bolder;
-    width: 40%;
-    text-align: center;
-  }
+  
   .mid-area-greeting{
     color: white;
   }
