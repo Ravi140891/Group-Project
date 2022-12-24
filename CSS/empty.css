@@ -1,0 +1,144 @@
+.mid-area{
+    background-color: #36383f
+}
+.xyz{
+        position: absolute;
+        /* border: 2px solid red; */
+        top: 20%;
+        left: 40%;
+        font-size: 2rem;
+        font-weight: bolder;
+        width: 40%;
+        text-align: center;
+}
+.empty_page_element1{
+    /* border: 2px solid red; */
+    background-color: #202225;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.empty_page_element_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: bold;
+}
+.empty_page_element_left img{
+    width: 2.5rem;
+}
+.empty_page_element1:hover{
+    background-color: #2f3137;
+    cursor: pointer; 
+}
+.empty_page_element2{
+    /* border: 2px solid red; */
+    background-color: #202225;
+    border-radius: 8px;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.empty_page_element_left2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.empty_page_element_left2 img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.empty_page_element2:hover{
+    background-color: #2f3137;
+    cursor: pointer;
+    
+}
+
+.empty_page_element3{
+    /* border: 2px solid red; */
+    background-color: #202225;
+    border-radius: 8px;
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.empty_page_element_left3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.empty_page_element_left3 img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.empty_page_element3:hover{
+    background-color: #2f3137;
+    cursor: pointer;
+    
+}
+
+
+.empty_page_element4{
+    /* border: 2px solid red; */
+    background-color: #202225;
+    border-radius: 8px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.empty_page_element_left4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.empty_page_element_left4 img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.empty_page_element4:hover{
+    background-color: #2f3137;
+    cursor: pointer;
+}
+.empty_page_check{
+    /* border: 2px solid red; */
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: green;
+}
+.fa-check{
+    color: white;
+}
+
+
