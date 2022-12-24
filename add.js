@@ -18,10 +18,6 @@ const userName = document.querySelector('.modal_form_input');
 const userBtn = document.querySelector('.userBtn');
 
 
-
-//const changeName = document.querySelector('.change_name')
-//const changeUserName = document.querySelector('.change_userName')
-// console.log(changeName.innerHTML);
 logoArr = JSON.parse(localStorage.getItem('logoArr'))??[];
 logoArr.map((ele)=>{
     createListItem(ele);
@@ -76,19 +72,16 @@ lastModalBack.addEventListener('click', ()=>{
  function addLogoItem(event){
      event.preventDefault();
      uname = userName.value;
-    //  console.log(uname);
-
+    
     const logoObj = {
             name: uname,
         };
     logoArr.push(logoObj);
-    // console.log(logoArr);
     localStorage.setItem('logoArr', JSON.stringify(logoArr));
-     createListItem(logoObj);
-     localStorage.setItem('obj', JSON.stringify(logoObj));
-     location.href = "empty.html";
-     //changeName.innerText = uname;
-    // changeUserName.innerText = uname;
+    createListItem(logoObj);
+    localStorage.setItem('obj', JSON.stringify(logoObj));
+    location.href = "empty.html";
+    
  }
 
 function createListItem(logoObj){
@@ -97,7 +90,7 @@ function createListItem(logoObj){
     listEle.setAttribute("id", logoObj.name);
     listEle.innerHTML = 
     `<button class="userBtn">
-    <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
+    <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
     </button>`
     userLogo.appendChild(listEle);
     dataForm.reset();
@@ -117,6 +110,10 @@ function createEnviornment(event){
      location.href = "empty.html";
 }
 
+function openOdinProj(event){
+    location.href="rules.html";
+}
+
 
 
 
@@ -126,4 +123,13 @@ function createEnviornment(event){
 
 
 dataForm.addEventListener('submit', addLogoItem);
-userLogo.addEventListener('click',createEnviornment);
+userLogo.addEventListener('click',(event)=>{
+     if(event.target.classList.contains("envi"))
+     {  
+         createEnviornment(event);
+      }
+    else if(event.target.classList.contains("the_odin_pro"))
+      {
+         openOdinProj(event);
+      }
+});
