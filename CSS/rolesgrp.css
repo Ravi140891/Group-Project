@@ -184,29 +184,31 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
 }
-.input-area{
+.input-area {
     width: 100%;
     display: flex;
     align-items: center;
     position: fixed;
-    bottom: 1rem;
-}
-.input-area input{
+    bottom: 1.5rem;
+    left: 14.5rem;
+    margin: auto;
+  }
+  .input-area input {
     width: 80%;
     height: 40px;
     border-radius: 5px;
-    background-color: #40444B;
+    background-color: #40444b;
     border: none;
     padding: 0 3rem;
     color: white;
     outline: none;
-}
-.input-area .fa-plus-circle{
+  }
+  .input-area .fa-plus-circle {
     color: lightgray;
     font-size: x-large;
     position: relative;
     left: 2rem;
-}
+  }
 .fa-gift{
     color: lightgray;
     font-size: x-large;
@@ -393,6 +395,15 @@ margin-bottom: 3vh;
 .fa-bars, .respIcon{
     display: none;
 }
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffa880), to(#da1b60));
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+  }
+
 @media screen and (max-width: 490px) {
     .rolesThorFirstMessage{
         width: 90%;
