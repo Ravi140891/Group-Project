@@ -85,3 +85,8 @@ main a:hover{
 .login-flex{
     padding: 0 1rem;
 }
+.guest{
+    width: max-content;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+}
