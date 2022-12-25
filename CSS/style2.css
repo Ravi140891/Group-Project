@@ -211,7 +211,7 @@ nav .fa {
   word-spacing: 4px;
 }
 .right-side {
-  max-height: 65%;
+  max-height: 66%;
   width: 30%;
   /* background-color: #36393f; */
   margin-top: 1rem;
@@ -386,8 +386,9 @@ a {
   border-radius: 10px;
 }
 .profile-pic {
-  width: 33px;
-  height: 33px;
+  min-width: 33px;
+  min-height: 33px;
+  max-width: 33px;
   border-radius: 50%;
   /* background-color: #5865F2; */
   /* color: white; */
