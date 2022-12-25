@@ -169,7 +169,14 @@
             <i class="fa fa-gift"></i>
             <img src="Images\gif.png" alt="" class="gif" />
             <img src="Images\sticker.png" alt="" class="sticker" />
-            <img src="Images\wink.png" alt="" class="smily" />
+            <div class="emojis">
+              <div class="emoji-box">
+                <ul>
+                  
+                </ul>
+              </div>
+            <div class="emoji-selector"><img src="Images\wink.png" alt="" class="smily" /></div>
+            </div>
           </form>
         </section>
       </div>
@@ -289,18 +296,31 @@ Give your new server a personality with a name.
       if (dd < 10) {
         dd = "0" + dd;
       }
-      // let hours = date.getHours();
-      // if(hours < 10){
-      //   hours = "0" + hours
-      // }
-      // let minutes = date.getMinutes();
-      // if(minutes < 10) {
-      //   minutes = "0" + minutes
-      // }
       let current = `${dd}/${mm}/${yyyy}`;
       let time = date.toLocaleTimeString();
       let userId = JSON.parse(localStorage.getItem("userId"));
       let gender = JSON.parse(localStorage.getItem("gender"));
+      let emojiBox = document.querySelector(".emoji-box");
+      let emojiSelector = document.querySelector(".emoji-selector")
+      let emoji = document.querySelector('.emoji-icon');
+    
+
+      emojiSelector.addEventListener('click', ()=>{
+        emojiBox.classList.toggle('active')
+      })
+
+      fetch('https://emoji-api.com/emojis?access_key=dd5856872d3977546a8acfc27d147a10fb448217')
+      .then(res => res.json()).then(data => loadEmoji(data));
+
+      function loadEmoji(data){
+        data.forEach(emoji =>{
+          let li = document.createElement('li');
+          li.classList.add('emoji-icon')
+          li.setAttribute('emoji-name', emoji.slug)
+          li.textContent = emoji.character;emojiBox.appendChild(li);
+        })
+      }
+
       let message = [
         {
           id: "Thor",
@@ -396,6 +416,13 @@ Give your new server a personality with a name.
       let inputMsg = document.getElementById("input-text");
       let chatWindow = document.querySelector(".chat-box");
       const chatBox = document.querySelector(".input-area");
+       emojiBox.addEventListener('click', e =>{
+        inputMsg.value += e.target.innerText;
+      })
+
+      inputMsg.addEventListener('focus', ()=>{
+        emojiBox.classList.remove('active')
+      })
       render();
       function createItem(msg) {
         let listItem = document.createElement("li");
@@ -415,6 +442,7 @@ Give your new server a personality with a name.
       }
       chatBox.addEventListener("submit", (e) => {
         e.preventDefault();
+        console.log(e)
         const msg = {
           id: userId,
           text: inputMsg.value,
@@ -429,6 +457,7 @@ Give your new server a personality with a name.
         autoScroll();
         inputMsg.value = "";
       });
+    
 
       function render() {
         message.forEach((msg) => createItem(msg));
