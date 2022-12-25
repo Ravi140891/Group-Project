@@ -296,6 +296,7 @@ a {
   align-items: center;
   position: fixed;
   bottom: 1.5rem;
+  left: 14.5rem;
   margin: auto;
 }
 .input-area input {

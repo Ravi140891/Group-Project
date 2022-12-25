@@ -112,7 +112,7 @@ function createListItem(logoObj){
 
 
 function createEnviornment(event){
-   
+   console.log(event);
      event.preventDefault();
      let candidate = event.path[2].id;
      logoArr.forEach((ele)=>{
