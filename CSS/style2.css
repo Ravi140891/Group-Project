@@ -474,3 +474,16 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+.serverNameHover{
+  /* display: none; */
+  color:grey;
+  /* position: relative; */
+  /* left: 3.8rem; */
+  /* bottom: 2rem; */
+  /* border: 1px solid lightgrey; */
+  /* padding: 0.8rem; */
+  /* background-color: white; */
+  /* border-top-left-radius: 50%; */
+  /* border-bottom-left-radius: 50%; */
+
+}

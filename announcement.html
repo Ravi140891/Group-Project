@@ -27,11 +27,9 @@
           <li class="logo_list_item"><div class="user main-logo">
             <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
           </div></li>
-          <li class="logo_list_item"><div class="user">
-            <img src="Images/discord-v2-svgrepo-com.svg" alt="" />
-          </div></li>
           <li class="logo_list_item"><button class="userBtn">
             <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="the_odin_pro" />
+            <span class="serverNameHover">TOP</span>
           </button></li>
         </ul>
         <div
@@ -255,7 +253,13 @@
           </div>
           <form class="input-area">
             <i class="fa fa-plus-circle"></i>
-            <input type="text" placeholder="Message #introductions" id="input-text"/>
+            <input
+              type="text"
+              placeholder="You do not have permission to write in this area."
+              id="input-text"
+              readonly
+              style="cursor: not-allowed"
+            />
             <i class="fa fa-gift"></i>
             <img src="Images\gif.png" alt="" class="gif" />
             <img src="Images\sticker.png" alt="" class="sticker" />

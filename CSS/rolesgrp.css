@@ -266,6 +266,20 @@ a{
     border-radius: 10px;
 }
 
+.serverNameHover{
+    /* display: none; */
+    color:grey;
+    /* position: relative; */
+    /* left: 3.8rem; */
+    /* bottom: 2rem; */
+    /* border: 1px solid lightgrey; */
+    /* padding: 0.8rem; */
+    /* background-color: white; */
+    /* border-top-left-radius: 50%; */
+    /* border-bottom-left-radius: 50%; */
+
+}
+
 
 
 
@@ -286,8 +300,8 @@ color: rgb(127, 125, 130);
     border-bottom: 1px solid rgb(31, 31, 31);
 }
 .rolesWelcomeSec{
-    height: 90vh;
-    overflow: scroll;
+   /* max-height: 84vh; */
+    /* overflow-y: scroll; */
     padding: 0 2vw;
  }
 .rolesWelcomeImages{
@@ -395,14 +409,6 @@ margin-bottom: 3vh;
 .fa-bars, .respIcon{
     display: none;
 }
-::-webkit-scrollbar{
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb{
-    border-radius: 20px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffa880), to(#da1b60));
-    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
-  }
 
 @media screen and (max-width: 490px) {
     .rolesThorFirstMessage{
