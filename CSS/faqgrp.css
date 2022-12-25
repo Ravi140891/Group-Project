@@ -266,7 +266,19 @@ a{
     color: white;
     border-radius: 10px;
 }
+.serverNameHover{
+    /* display: none; */
+    color:grey;
+    /* position: relative; */
+    /* left: 3.8rem; */
+    /* bottom: 2rem; */
+    /* border: 1px solid lightgrey; */
+    /* padding: 0.8rem; */
+    /* background-color: white; */
+    /* border-top-left-radius: 50%; */
+    /* border-bottom-left-radius: 50%; */
 
+}
 
  
  /* ###################################
@@ -285,7 +297,7 @@ color: rgb(127, 125, 130);
     border-bottom: 1px solid rgb(31, 31, 31);
 }
 .faqWelcomeSec{
-   height: 87vh;
+   max-height: 84vh;
    overflow-y: scroll;
    padding: 0 2vw;
 }
