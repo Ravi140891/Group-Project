@@ -200,3 +200,6 @@ input{
     background-color: rgb(109, 109, 239);
     cursor: pointer;
 }
+nav{
+    padding: .15rem 1rem;
+}

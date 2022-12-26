@@ -87,6 +87,9 @@ ul li {
   border-radius: 20px;
   border: none;
 }
+.login a{
+  font-size: 1rem;
+}
 .nav-items {
   width: 50%;
 }
@@ -109,7 +112,7 @@ ul li {
 }
 .header-content p {
   color: white;
-  font-size: large;
+  font-size: 1.5rem;
   text-align: center;
   word-spacing: 3.5px;
 }
@@ -120,11 +123,11 @@ ul li {
   border: none;
 }
 .download {
-  font-size: large;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 .browser {
-  font-size: large;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
 }
@@ -165,11 +168,11 @@ ul li {
 }
 .section h1,
 .section-four h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: sans-serif;
 }
 .section p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   font-family: sans-serif;
   font-weight: lighter;
@@ -201,7 +204,7 @@ ul li {
   align-items: center;
 }
 .sec-four h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .sec-four img {
   position: relative;
@@ -222,7 +225,7 @@ footer {
 }
 footer article h1 {
   color: #5865f2;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: sans-serif;
 }
 footer article img {
@@ -230,18 +233,19 @@ footer article img {
 }
 footer article label {
   color: white;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .country {
   margin-top: 1rem;
 }
 .country select {
-  max-width: 50px;
+  max-width: 4rem;
   padding: 0;
 }
 .social {
   color: white;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .footer-section {
@@ -260,8 +264,10 @@ footer article label {
   color: white;
   line-height: 2rem;
 }
+
 .blue {
   color: #5865f2;
+  font-size: 1.5rem;
 }
 .footer-logo {
   margin-top: 1rem;
@@ -283,6 +289,7 @@ footer article label {
 .signup a{
   text-decoration: none;
   color: white;
+  font-size: 1rem;
 }
 .login a{
   text-decoration: none;

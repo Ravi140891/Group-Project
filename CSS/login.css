@@ -30,14 +30,17 @@ body{
     display: none;
 }
 .login-form input{
-    padding: .3rem .5rem;
-    margin-bottom: .5rem;
+    padding: .5rem .8rem;
+    margin-bottom: .7rem;
     border-radius: 20px;
     border: none;
     outline: none;
 }
 .login-form input[type = 'radio']{
     margin: .5rem 0;
+}
+label{
+    font-size: 1.5rem;
 }
 .submit-btn{
     margin-top: 1rem;
@@ -63,14 +66,18 @@ h1{
 main{
     margin: 2rem;
 }
+main p{
+    font-size: 1.5rem;
+}
 main h2{
     color: #404EED;
     margin: 1rem;
+    font-size: 2rem;
 }
 main a{
     text-decoration: none;
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 main a:hover{
