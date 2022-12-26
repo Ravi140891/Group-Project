@@ -3,12 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #2C2E33;
+    color: white;
+    font-family: sans-serif;
+}
 aside{
     max-width: min(3vw, 80px);
     display: flex;
+    height: 100vh;
     flex-direction: column;
     padding: .3rem;
     background-color: #202225;
+    align-items: center;
 }
 main{
     display: flex;
@@ -24,8 +31,9 @@ main{
     width: min(15vw, 500px);
     display: flex;
     flex-direction: column;
-    background-color: #25272c;
+    background-color: #2F3136;
     color: white;
+    height: 100vh;
     font-family: sans-serif;
 }
 .wrapper{
@@ -47,6 +55,7 @@ main{
     padding: .3rem;
     border-radius: 4px;
     width: 100%;
+    background-color: #42464D;
 }
 .home{
     padding: .5rem;
@@ -175,77 +184,107 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
 }
-.input-area{
+.input-area {
     width: 100%;
     display: flex;
     align-items: center;
     position: fixed;
-    bottom: 2rem;
-}
-.input-area input{
+    bottom: 1.5rem;
+    left: 14rem;
+    margin: auto;
+  }
+  .input-area input {
     width: 80%;
     height: 40px;
     border-radius: 5px;
-    background-color: #40444B;
+    background-color: #40444b;
     border: none;
     padding: 0 3rem;
     color: white;
     outline: none;
-}
-.input-area .fa-plus-circle{
+  }
+  .input-area .fa-plus-circle {
     color: lightgray;
     font-size: x-large;
     position: relative;
     left: 2rem;
-}
-.fa-gift{
+  }
+
+  .fa-gift {
     color: lightgray;
     font-size: x-large;
     position: relative;
     right: 10rem;
-}
-.gif{
+  }
+  .gif {
     position: relative;
     right: 9rem;
-}
-.sticker{
+  }
+  .sticker {
     position: relative;
     right: 8rem;
-}
-.smily{
+  }
+  .smily {
     position: relative;
     right: 7rem;
-}
-.chat-box{
+  }
+  .chat-box {
     color: white;
-}
-.chat-box li{
+  }
+  .chat-box li {
     list-style: none;
-    margin-bottom: .5rem;
-    margin-left: .3rem;
-}
-.pic img{
+    margin-bottom: 0.5rem;
+    margin-left: 0.3rem;
+  }
+  .pic img {
     width: 38px;
     border-radius: 50%;
-    margin-right: .8rem;
-}
+    margin-right: 0.8rem;
+  }
 .user{
     display: flex;
     align-items: center;
 }
+.circleIconButton-1VxDrg{
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: green;
+    background-color: #36393F;
+    outline: none;
+    margin-top: .5rem;
+}
+.circleIconButton-1VxDrg:hover{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+.serverNameHover{
+    /* display: none; */
+    color:grey;
+    /* position: relative; */
+    /* left: 3.8rem; */
+    /* bottom: 2rem; */
+    /* border: 1px solid lightgrey; */
+    /* padding: 0.8rem; */
+    /* background-color: white; */
+    /* border-top-left-radius: 50%; */
+    /* border-bottom-left-radius: 50%; */
 
+}
 
  
  /* ###################################
                      FAQ PAGE 
         ####################################         */
-*{
-    margin: 0%;
-    background-color: #2C2E33;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    /* padding: 2px; */
-}
+
 .faqHeader i{
 margin-right: 1vw;
 color: rgb(127, 125, 130);
@@ -258,12 +297,15 @@ color: rgb(127, 125, 130);
     border-bottom: 1px solid rgb(31, 31, 31);
 }
 .faqWelcomeSec{
-    padding: 2vw;
+   max-height: 84vh;
+   overflow-y: scroll;
+   padding: 0 2vw;
 }
 .faqWelcomeImages{
     border-radius: 100%;
-    width: 4vw;
-    margin: 2% 1% 0% 1%;
+    width: 4rem;
+    height: 3rem;
+    margin: 0% 1% 0% 1%;
 }
 .faqWelcomeGreet{
     font-size: 1.8rem;
@@ -273,6 +315,9 @@ color: rgb(127, 125, 130);
 color: rgb(193, 189, 189);
 margin-top: 2vh;
 margin-bottom: 3vh;
+}
+.messageSec{
+  padding-bottom: 7vh;
 }
 .faqStartDate{
     width: 100%; 
@@ -311,7 +356,7 @@ margin-bottom: 3vh;
     font-size: small;
 }
 #faq-edit{
-    font-size: small;
+    font-size: 1rem;
     color: gray;
 }
 #faq-edit, .faqThorFirstMessage{
@@ -336,46 +381,55 @@ margin-bottom: 3vh;
 }
 .faqLink{
     text-decoration: none;
-    color: #00a6fb;
+    color: rgb(1, 103, 255);
     background-color: rgb(45, 45, 46);
 }
 .faqThorFeaturedQueTitle{
-    background-color: rgb(45, 45, 46);
+        width: 50%; 
+        text-align: center; 
+        border-bottom: 1px double rgb(66, 65, 65); 
+        line-height: 0.1em;
+        margin: 10px 0 5px;
 }
 .faqFeatured{
  font-weight: 900;
- background-color: rgb(45, 45, 46);
- width: 50%;
 }
 .faqThorFeaturedQue{
-    width: 40%;
+    width: 100%;
     padding-bottom: 1vh;
     background-color: rgb(45, 45, 46);
 }
 .faqThorQuestionare{
-    background-color: rgb(45, 45, 46);
+    background-color: rgb(45, 45, 46)
 }
 .queAns{
     margin-top: 2vh;
     margin-bottom: 2vh;
-    background-color: rgb(45, 45, 46);
+    background-color: rgb(45, 45, 46)
 }
 .question{
     font-weight: 900;
-    background-color: rgb(45, 45, 46);
+    background-color: rgb(45, 45, 46)
 }
 .ans{
-    background-color: rgb(45, 45, 46);
+    background-color: rgb(45, 45, 46)
 }
 .ans a, question a, .faqThorFeaturedQueLink{
     text-decoration: none;
-    color: #00a6fb;
-    background-color: rgb(45, 45, 46);
+    color: rgb(1, 103, 255);
+    background-color: rgb(45, 45, 46)
 }
 .fa-bars, .respIcon{
     display: none;
 }
-
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffa880), to(#da1b60));
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+  }
 @media screen and (max-width: 490px) {
     .faqThorFirstMessage{
         width: 90%;
@@ -398,4 +452,8 @@ margin-bottom: 3vh;
         display: flex;
         width: 20%;
     }
+}
+
+.last_modal_container, .modal_container, .modal2_container{
+    color: black;
 }

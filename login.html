@@ -19,7 +19,7 @@
           <section class="nav-items">
             <ul>
               <li><a href="http://">Download</a></li>
-              <li><a href="http://">Nitro</a></li>
+              <li><a href="nitro.html">Nitro</a></li>
               <li><a href="http://">Discover</a></li>
               <li><a href="http://">Safety</a></li>
               <li><a href="http://">Support</a></li>
@@ -62,8 +62,9 @@
         <input type="email" name="email" id="login-id" /><br />
         <label for="password">Password:</label><br />
         <input type="password" name="password" id="login-pass" /><br />
-        <input type="submit" value="Login" class="submit-btn" />
+        <input type="submit" value="Login" class="submit-btn" /> <br />
       </form>
+      <input type="button" value="Guest Login" class="submit-btn guest" />
     </div>
     <main>
       <h2>Don't have an account yet?</h2>
@@ -74,8 +75,21 @@
       const loginPass = document.getElementById("login-pass");
       const loginForm = document.querySelector(".login-form");
       const loginErr = document.querySelector(".login-err");
+      const guestLogin = document.querySelector(".guest");
 
-      loginArr = JSON.parse(localStorage.getItem("data")) || [];
+      loginArr = [
+        { id: "Admin", mail: "admin@gmail.com", pass: 123456, gender: "male" },
+      ];
+      loginArr2 = JSON.parse(localStorage.getItem("data")) || [];
+      Array.prototype.push.apply(loginArr, loginArr2);
+
+      guestLogin.addEventListener("click", () => {
+        let localId = 'Guest';
+        let gender = 'male';
+        localStorage.setItem("userId", JSON.stringify(localId));
+        localStorage.setItem("gender", JSON.stringify(gender));
+        return (location.href = "homepage.html");
+      });
 
       loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -85,6 +99,10 @@
               loginArr[i].mail == loginId.value &&
               loginArr[i].pass == loginPass.value
             ) {
+              let localId = loginArr[i].id;
+              let gender = loginArr[i].gender;
+              localStorage.setItem("userId", JSON.stringify(localId));
+              localStorage.setItem("gender", JSON.stringify(gender));
               return (location.href = "homepage.html");
             }
           }
