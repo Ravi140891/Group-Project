@@ -2,15 +2,14 @@
     background-color: #36383f
 }
 .xyz{
-        position: absolute;
+        position: relative;
         /* border: 2px solid red; */
-        top: 20%;
-        left: 40%;
+        top: 10%;
+        left: 30%;
         font-size: 2rem;
         font-weight: bolder;
         width: 40%;
-        text-align: center;
-}
+    }
 .empty_page_dummy_data{
     display: flex;
     flex-direction: column;
@@ -133,16 +132,17 @@
     color: white;
 }
 .serverNameHover{
-    /* display: none; */
-    color:grey;
-    /* position: relative; */
-    /* left: 3.8rem; */
-    /* bottom: 2rem; */
-    /* border: 1px solid lightgrey; */
-    /* padding: 0.8rem; */
-    /* background-color: white; */
-    /* border-top-left-radius: 50%; */
-    /* border-bottom-left-radius: 50%; */
+    display: none;
+    color:white;
+    font-weight: bold;
+    position: relative;
+    left: 3.8rem;
+    bottom: 2rem;
+    border: 1px solid lightgrey;
+    padding: 0.6rem;
+    background-color:black;
+    border-top-left-radius: 50%; 
+    border-bottom-left-radius: 50%;
 
 }
 
