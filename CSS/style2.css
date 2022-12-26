@@ -153,7 +153,7 @@ nav .fa {
 .mid-area h5 {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 20px;
 }
 .wrap-container {
@@ -164,7 +164,7 @@ nav .fa {
   align-items: initial;
 }
 .left-side {
-  height: 90%;
+  max-height: 90%;
   margin-top: 1rem;
   max-width: 65%;
   background-color: #36393f;
@@ -178,14 +178,15 @@ nav .fa {
   border-bottom: 1px solid grey;
 }
 .user-picture{
-  min-width: 30px;
-  max-width: 35px;
+  min-width: 40px;
+  max-width: 45px;
   margin: 10px;
-
 }
 .home-para{
   display: flex;
   align-items: flex-start;
+  padding: 0 1.5rem;
+  max-width: 100%;
 }
 .name-time{
   display: flex;
@@ -194,9 +195,9 @@ nav .fa {
   margin: 10px 0;
 }
 .name-time .time{
-  font-size: 10px;
+  font-size: 1rem;
   color: grey;
-  margin-left: 7px;
+  margin-left: 15px;
 }
 .home-msg{
   display: flex;
@@ -206,24 +207,25 @@ nav .fa {
 }
 .home-msg .para{
   color: white;
-  padding: 0 7px;
-  font-size: 14px;
+  padding: 0 .5rem;
+  font-size: 1rem;
   word-spacing: 4px;
 }
 .right-side {
-  max-height: 66%;
+  max-height: 67%;
   width: 30%;
   /* background-color: #36393f; */
   margin-top: 1rem;
 }
 .upper{
   width: 100%;
-  height: 30%;
+  max-height: 30%;
+  min-height: 28%;
   background-color: #36393f;
   margin-bottom: 2rem;
   border-radius: 10px;
   color: white;
-  font-size: 13px;
+  font-size: 1rem;
 }
 .upper h1{
   font-size: 1.5rem;
@@ -239,22 +241,22 @@ nav .fa {
   max-width: 100%;
 }
 .upper .green{
-  width: 8px;
+  width: 12px;
   background-color: green;
-  height: 8px;
+  height: 12px;
   border-radius: 50%;
   display: inline-block;
   /* margin-bottom: 2px; */
-  margin-left: 3px;
+  margin-left: 5px;
 }
 .upper .grey{
-  width: 8px;
+  width: 12px;
   background-color: grey;
-  height: 8px;
+  height: 12px;
   border-radius: 50%;
   display: inline-block;
   /* margin-bottom: 2px; */
-  margin-left: 3px;
+  margin-left: 5px;
 }
 .upper-content{
   margin-top: -1rem;
@@ -269,9 +271,9 @@ nav .fa {
   padding: 1rem;
 }
 .hash{
-  width: 25px;
+  width: 30px;
   padding: 5px;
-  height: 25px;
+  height: 30px;
   background-color: #202225;
   border-radius: 50%;
   text-align: center;
