@@ -2,15 +2,14 @@
     background-color: #36383f
 }
 .xyz{
-        position: absolute;
+        position: relative;
         /* border: 2px solid red; */
-        top: 20%;
-        left: 40%;
+        top: 10%;
+        left: 30%;
         font-size: 2rem;
         font-weight: bolder;
         width: 40%;
-        text-align: center;
-}
+    }
 .empty_page_dummy_data{
     display: flex;
     flex-direction: column;
