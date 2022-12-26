@@ -1,6 +1,6 @@
 let logoArr = [], count=0, uname='';
 const userLogo = document.querySelector('.user_logo');
-const logoListItem = document.querySelector('.logo_list_item');
+// const logoListItem = document.querySelectorAll('.logo_list_item');
 const modal = document.querySelector('.modal_container');
 const modal2 = document.querySelector('.modal2_container');
 const openModal = document.querySelector('.circleIconButton-1VxDrg');
@@ -146,10 +146,25 @@ userLogo.addEventListener('click',(event)=>{
          openOdinProj(event);
       }
 });
-// userLogo.addEventListener('mouseout', (event)=>
-// {
-//     console.log(event.target.classList);
-//     if(event.target.classList.contains("logo_list_item"))
-//     serverNameHover.style.display="block";
-// }
-// )
+document.querySelectorAll('.logo_list_item').forEach((ele)=>{
+    ele.addEventListener('mouseover', ()=>{
+        console.log(ele);
+        ele.querySelector('.serverNameHover').style.display="block";
+    })
+    ele.addEventListener('mouseout', ()=>{
+        console.log(ele);
+        ele.querySelector('.serverNameHover').style.display="none";
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
