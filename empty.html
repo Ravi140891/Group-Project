@@ -20,6 +20,67 @@
   </head>
 
   <body>
+
+    <!-- =================================================================== create channel form ==================================================================== -->
+
+    <form class="createChannelForm" id="create-channel-form">
+
+      <section class="createChannelFormHead" id="create-channel-form-head">
+          <section class="createChannelFormHeading" id="create-channel-form-heading">
+              <p class="createChannelFormHeadingOne" id="create-channel-form-heading-one">Create Channel</p>
+              <p class="createChannelFormHeadingTwo" id="create-channel-form-heading-two">in Text Channels</p>
+          </section>
+          <i class="fa-solid fa-xmark" id="x-markClose"></i>
+      </section>
+
+
+      <p class="createChannelFormChannelType" id="create-channel-form-channel-type">CHANNEL TYPE</p>
+
+      <section class="createChannelFormSelectOne" id="create-channel-form-select-one">
+          <i class="fa-sharp fa-solid fa-hashtag"></i>
+          <section class="createChannelFormSelectOneSec" id="create-channel-form-select-one-sec">
+              <p class="createChannelFormSelectOneSecParaOne" id="create-channel-form-select-one-sec-para-one">Text</p>
+              <p class="createChannelFormSelectOneSecParaTwo" id="create-channel-form-select-one-sec-para-two">Send messages, images, GIFs, emoji, opinions, and puns</p>
+          </section>
+          <input type="radio" name="select" style="width: fit-content;" checked>
+      </section>
+
+      <section class="createChannelFormSelectTwo" id="create-channel-form-select-two">
+          <i class="fa-solid fa-volume-high"></i>
+          <section class="createChannelFormSelectTwoSec" id="create-channel-form-select-two-sec">
+              <p class="createChannelFormSelectTwoSecParaOne" id="create-channel-form-select-two-sec-para-one">Voice</p>
+              <p class="createChannelFormSelectTwoSecParaTwo" id="create-channel-form-select-two-sec-para-two">Hang out together with voice, video, and screen share</p>
+          </section>
+          <input type="radio" name="select" style="width: fit-content;">
+      </section>
+
+      <p class="createChannelFormChannelName" id="create-channel-form-channel-name">CHANNEL NAME</p>
+
+      <section class="createChannelFormNewChannel" id="create-channel-form-new-channel">
+          <i class="fa-regular fa-hashtag"></i>
+          <input id="channel-input" type="text" placeholder="new-channel" style="width: fit-content;">
+      </section>
+
+      <section class="createChannelFormPrivateSec" id="create-channel-form-private-sec">
+          <p class="createChannelFormPrivateChannel" id="create-channel-form-private-channel"><i class="fa-solid fa-lock" style="color: gray;"></i>  Private Channel</p>
+          <label class="switch" id="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+      </section>
+
+      <p class="createChannelFormPrivateSecNote" id="create-channel-form-private-sec-note">Only selected members and roles will be able to view this channel.</p>
+
+      <section class="createChannelFormBtn" id="create-channel-form-btn">
+          <input  type="submit" value="create" class="createChannelFormCreateBtn" id="create-channel-form-create-btn" style="width: fit-content;">
+          <button class="createChannelFormCancelBtn"  id="create-channel-form-cancel-btn">Cancel</button>
+      </section>
+  </form>
+
+  <!-- ================================================== ============================================================================================= ========================================================= -->
+
+
+
     <main>
       <!-- ===================================================================left most logo section==================================================================== -->
       <aside>
@@ -72,11 +133,11 @@
                     <p>TEXT CHANNELS</p>
                   </div>
                 
-                  <i class="fa-sharp fa-solid fa-plus"></i>
+                  <i class="fa-sharp fa-solid fa-plus" id="channel-text-button"></i>
                 </a>
               </li>
               <li>
-                <div class="inner-div">
+                <div class="inner-div" id="generalItem">
                 <a href="http://" class="liItems">
                 <div class="left_subpart">
                   <i class="fa fa-hashtag"></i> &nbsp
@@ -100,6 +161,7 @@
                 <p>faq</p>
                 </a>
               </li>
+              <ul id="channel-ul-list"></ul>
             </ul>
           </div>
         </div>
@@ -111,7 +173,7 @@
             <div class="nav-home">
               <a href="introduction.html"
                 ><i class="fa fa-hashtag"></i> &nbsp
-                <p>General</p></a
+                <p id="channel-main-heading">General</p></a
               >
             </div>
           </div>
@@ -126,8 +188,8 @@
           </div>
         </nav>
         <section class="mid-area">
-          <div class="xyz"><pre class="mid-area-greeting">Welcome to <span class="server_userName">Aishwarya Verma</span>'s Server</pre></div>
-          <div class="empty_page_dummy_data">
+          <div class="xyz"><pre class="mid-area-greeting" id="midAreaGreeting">Welcome to <span class="server_userName">Aishwarya Verma</span>'s Server</pre></div>
+          <div class="empty_page_dummy_data" id="emptyPageDummyData">
           <div class="empty_page_element1">
             <div class="empty_page_element_left">
               <img src="Images/announce2.svg">
@@ -159,6 +221,18 @@
             </div>
           </div>
         </div>
+
+        <!-- ========================== Channel Display Para after creation of Channel =========================== -->
+
+        <section class="channelWelcomeSec" id="channel-welcome-sec">
+          <figure><img class="channelWelcomeImages" id="channel-welcome-images" src="Images/Hashicon.png" alt="hashtag-circle"></figure><br>
+          <p class="channelWelcomeGreet" id="channel-welcome-greet">Welcome to #general!</p>
+          <p class="channelWelcomeText" id="channel-welcome-text">This is the start of the #general channel.</p>
+          <p class="channelStartDate" id="channel-start-date"><i class="fa-solid fa-pen"></i> edit channel</span></p>
+        </section>
+
+        <!-- ========================== ========================== ========================== ==========================  -->
+
           <!-- <ul class="chat-box"></ul>       -->
           
           <form class="input-area">
