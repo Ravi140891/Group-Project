@@ -276,7 +276,7 @@ input:checked+.slider:before {
 
 
 .createChannelForm {
-    /* display: none; */
+    display: none;
     width: 430px;
     min-width: 400px;
     padding: 10px;
@@ -428,10 +428,10 @@ input:focus {
 .createChannelFormCreateBtn {
     float: right;
     padding: 13px;
-    background-color: rgb(67, 75, 148);
+    background-color: rgb(29, 51, 240);
     border-radius: 3px;
     border: none;
-    color: gray;
+    color: white;
 }
 
 .createChannelFormCancelBtn {
