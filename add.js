@@ -159,6 +159,119 @@ document.querySelectorAll('.logo_list_item').forEach((ele)=>{
 
 
 
+// ===KT======================= Targets for Creation Of Channel ===========================
+
+const $createButton = document.getElementById('create-channel-form-create-btn');
+const $cancelButton = document.getElementById('create-channel-form-cancel-btn')
+const $userInputText = document.getElementById('channel-input');
+const $welcomeGreet = document.getElementById('channel-welcome-greet');
+const $welcomeInput = document.getElementById('channel-welcome-text');
+const $heading = document.getElementById('channel-main-heading');
+const $form = document.getElementById(`create-channel-form`);
+const $channelAdd = document.getElementById('channel-text-button');
+const $channelClose = document.getElementById('x-markClose');
+const $channelGeneral = document.getElementById('generalItem');
+const $dummyDataEmptyPage = document.getElementById('emptyPageDummyData');
+const $MidGreet = document.getElementById('midAreaGreeting');
+const $welcomeBoard = document.getElementById('channel-welcome-sec');
+const $channelNew = document.getElementById('channel-ul-list');
+let channelArr = []; channelObj = {};
+
+// ========================== Function for Get Channel from localStorage ===========================
+
+channelArr = JSON.parse(localStorage.getItem('kunal'))||[];
+channelArr.map((ele)=>{
+   createChannelList(ele);
+})
+
+// ========================== Function for display Channel stored in a localStorage ===========================
+
+function createChannelList(ele){
+   const Li = document.createElement('li');
+   Li.setAttribute("id", ele.golu);
+   Li.setAttribute("class", "channelCreated");
+   Li.innerHTML = `<i class="fa fa-hashtag"></i> &nbsp${ele.golu}`;
+   $channelNew.appendChild(Li);
+}
+
+// ========================== Function for Jump to any existing Channel in the list ===========================
+
+function jumpToAnotherChannel(e){
+    console.log(e);
+   e.preventDefault();
+   if(e.target.classList.contains('channelCreated')){
+   $form.style.display = 'none';
+   $heading.innerText = e.target.innerText
+   $welcomeGreet.innerText = `Welcome to #${e.target.innerText}!`;
+   $welcomeInput.innerText = `This is the start of the #${e.target.innerText} channel.`;
+   e.target.parentElement.style.width = '160px';
+   e.target.parentElement.style.padding = '3px';
+   e.target.parentElement.style.borderRadius = '5px';
+   $dummyDataEmptyPage.style.display = 'none';
+   $MidGreet.style.display = 'none';
+   $welcomeBoard.style.display = 'flex';
+  };
+};
+
+// ========================== Function for Form of New Channel cancel/close ===========================
+
+function cancelCreationChannel(e){
+   e.preventDefault();
+   $form.style.display = 'none';
+}
+function closeForm(e){
+   e.preventDefault();
+   $form.style.display = 'none';
+}
+
+// ========================== Function for Form Display to Create New Channel ===========================
+
+function textChannelAdd(e){
+   e.preventDefault();
+   $form.style.display = 'block';
+}
+
+// ========================== Function for Submit Form for New Channel ===========================
+
+function createChannel(e){
+   e.preventDefault();
+
+   if($userInputText.value.length == 0){
+      alert('enter channel name!')
+   } else {
+
+      channelObj = {
+            golu : $userInputText.value,
+      };
+
+      channelArr.push(channelObj);
+      localStorage.setItem('kunal', JSON.stringify(channelArr));
+
+   $heading.innerText = `${$userInputText.value}`
+   $welcomeGreet.innerText = `Welcome to #${$userInputText.value}!`;
+   $welcomeInput.innerText = `This is the start of the #${$userInputText.value} channel.`;
+   $form.style.display = 'none';
+   document.createElement('li');
+   const newLi = document.createElement('li');
+   newLi.innerHTML = `<i class="fa fa-hashtag"></i> &nbsp<p>${$userInputText.value}</p>`;
+   $channelNew.appendChild(newLi);
+   $userInputText.value = '';
+   $welcomeBoard.style.display = 'flex';
+   $MidGreet.style.display = 'none';
+   $dummyDataEmptyPage.style.display = 'none';
+   }
+}
+
+// ========================== addEventListener for Channel ===========================
+
+$form.addEventListener ("submit", createChannel);
+$cancelButton.addEventListener ("click", cancelCreationChannel);
+$channelAdd.addEventListener ("click", textChannelAdd);
+$channelNew.addEventListener ("click", jumpToAnotherChannel);
+$channelClose.addEventListener ("click", closeForm)
+
+
+
 
 
 
