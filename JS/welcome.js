@@ -19,10 +19,16 @@ user = [
   { id: "Jerry", date: "12/20.2022, 12:22:12 PM" },
   { id: "Oggy", date: "12/20.2022, 12:25:12 PM" },
 ];
+fetch("https://user-api-2wzl.onrender.com/")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
 user1 = JSON.parse(localStorage.getItem("data")) || [];
 Array.prototype.push.apply(user, user1);
 const chatBox = document.querySelector(".chat-box");
 render();
+
+
 
 function createList(item) {
   let listItem = document.createElement("li");

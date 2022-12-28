@@ -21,7 +21,8 @@
       })
 
       signUpForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        console.log(e)
         if (fullName.value == "" && fullName.value.length < 5) {
           nameErr.style.display = "block";
           setTimeout(() => {
@@ -29,8 +30,6 @@
           }, 1500);
           return;
         }
-
-// fetch('https://user-api-2wzl.onrender.com/').then(res=> res.json()).then(data=> console.log(data))
 
         for(let i = 0; i < gender.length; i++){
           if(gender[i].checked){
@@ -120,12 +119,10 @@
             date : user.date
           }),
           headers: {
-            "Content-type" : 'application/json; charset=UTF-8',
+            "Content-type" : 'application/json'
           }
-        }).then(function(response){ 
-        return response.json()})
-        .then(function(data)
-         {console.log(data)})
+        }).then((res) =>res.json())
+        .then((data) => console.log(data))
          .catch((err)=> console.log(err));
 
         signUpForm.reset();
