@@ -91,7 +91,7 @@ lastModalBack.addEventListener('click', ()=>{
     localStorage.setItem('logoArr', JSON.stringify(logoArr));
     createListItem(logoObj);
     localStorage.setItem('obj', JSON.stringify(logoObj));
-    location.href = "empty.html";
+    location.href = "../Public/empty.html";
     
  }
 
@@ -101,7 +101,7 @@ function createListItem(logoObj){
     listEle.setAttribute("id", logoObj.name);
     listEle.innerHTML = 
     `<button class="userBtn">
-    <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
+    <img src="../Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
     <span class="serverNameHover">${logoObj.name}</span>
     </button>`
     userLogo.appendChild(listEle);
@@ -119,11 +119,11 @@ function createEnviornment(event){
      if (ele.name == candidate)
         localStorage.setItem('obj', JSON.stringify(ele));
      })
-     location.href = "empty.html";
+     location.href = "../Public/empty.html";
 }
 
 function openOdinProj(event){
-    location.href="app.html";
+    location.href="../Public/app.html";
 }
 
 

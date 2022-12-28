@@ -1,4 +1,4 @@
-.mid-area {
+  .mid-area {
     background-color: #36383f
 }
 
@@ -149,7 +149,10 @@
 .fa-check {
     color: white;
 }
-
+.main-logo .serverNameHover{
+    left: 1rem;
+    top: 1rem;
+}
 .serverNameHover {
     display: none;
     color: white;
