@@ -101,7 +101,7 @@ function createListItem(logoObj){
     listEle.setAttribute("id", logoObj.name);
     listEle.innerHTML = 
     `<button class="userBtn">
-    <img src="Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
+    <img src="../Images/discord-v2-svgrepo-com.svg" alt="" class="envi"/>
     <span class="serverNameHover">${logoObj.name}</span>
     </button>`
     userLogo.appendChild(listEle);
