@@ -180,15 +180,15 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 100;
   }
-  .input-area {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 1.5rem;
-    left: 14.5rem;
-    margin: auto;
-  }
+ .input-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 1.5rem;
+  right: -20rem;
+  margin: auto;
+}
   .input-area input {
     width: 80%;
     height: 40px;

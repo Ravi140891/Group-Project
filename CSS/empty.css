@@ -392,9 +392,7 @@ input::placeholder {
 input {
     background-color: rgb(32, 34, 37);
     border: none;
-    margin-left: 2%;
     padding: 2%;
-    margin-bottom: 2%;
     color: white;
 }
 
