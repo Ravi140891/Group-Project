@@ -168,7 +168,6 @@
 
 }
 
-
 /* ======================== channel css ============================== */
 #channel-start-date {
     color: green;
@@ -280,18 +279,19 @@ input:checked+.slider:before {
 
 .createChannelForm {
     display: none;
+    /* border: 2px solid red; */
     width: 430px;
     min-width: 400px;
     padding: 10px;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     background-color: rgb(53, 57, 63);
     border: 1px solid rgb(53, 57, 63);
     border-radius: 10px;
     font-family: sans-serif;
     border: 2px solid rgb(48, 47, 47);
     position: absolute;
-    bottom: 35%;
+    bottom: 15%;
     left: 40%;
     z-index: 1;
 }
@@ -395,9 +395,7 @@ input::placeholder {
 input {
     background-color: rgb(32, 34, 37);
     border: none;
-    margin-left: 2%;
     padding: 2%;
-    margin-bottom: 2%;
     color: white;
 }
 
