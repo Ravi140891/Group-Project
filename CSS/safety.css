@@ -104,6 +104,10 @@ header{
     color: black;
     font-family: sans-serif;
 }
+.card h2:hover{
+    cursor: pointer;
+    color: #5865F2;
+}
 .card1,.card3{
     margin-left: 3rem;
 }
