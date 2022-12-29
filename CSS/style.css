@@ -17,13 +17,16 @@ header {
   /* padding: 0 10rem; */
   position: relative;
 }
+.logo{
+  color: white;
+}
 .nav-side-menu {
   display: none;
 }
 nav {
   max-width: 100%;
   display: flex;
-  padding: 0 10rem;
+  padding: 0 13rem;
 }
 .left-bar .fa {
   display: none;
