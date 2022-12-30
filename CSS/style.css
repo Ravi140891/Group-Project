@@ -9,7 +9,7 @@
 }
 header {
   width: 100%;
-  height: min(500px, 65vh);
+  height: min(600px, 65vh);
   background-image: url("../Images/Header-background.svg");
   background-position: center;
   background-size: cover;
@@ -301,6 +301,9 @@ footer article label {
 }
 
 @media (min-width: 1200px) and (max-width: 1505px) {
+  nav{
+    padding: 0 2rem;
+  }
   .float-left img {
     width: 350px;
   }
@@ -322,7 +325,10 @@ footer article label {
   }
 }
 
-@media (min-width: 1040px) and (max-width: 1155px) {
+@media (min-width: 1040px) and (max-width: 1199px) {
+  nav{
+    padding: 0 2rem;
+  }
   .header-content {
     min-width: 50%;
   }
@@ -363,7 +369,7 @@ footer article label {
     max-width: 100%;
   }
   nav {
-    padding: 0 2rem;
+    padding: 0 1rem;
     max-width: 100%;
   }
   .nav-items {
@@ -396,6 +402,9 @@ footer article label {
     text-align: left;
     margin: 0;
     display: block;
+  }
+  .header-content h1{
+    font-size: 2rem;
   }
   .float-left {
     display: none;
@@ -445,12 +454,13 @@ footer article label {
     font-family: sans-serif;
   }
   .menu-btn {
-    max-width: 100%;
+    max-width: 90%;
     padding: 1rem;
     border: none;
     border-radius: 25px;
     background-color: #5865f2;
     color: white;
+    text-align: center;
   }
   .nav-side-menu article figure {
     max-width: 50%;
@@ -494,6 +504,13 @@ footer article label {
   .header-content {
     max-width: 100%;
     padding: 1rem;
+  }
+  nav{
+    max-width: 100%;
+    padding: 0;
+  }
+  .logo{
+    margin-left: 1rem;
   }
   .nav-items {
     display: none;
@@ -542,14 +559,81 @@ footer article label {
   .float-right {
     width: 400px;
   }
+  .nav-side-menu {
+    display: flex;
+    width: 378px;
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+    .nav-side-menu .fa {
+    font-size: larger;
+    color: black;
+  }
+  .nav-side-menu article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 1rem;
+  }
+  .nav-side-menu ul li {
+    padding: 0.5rem 1rem;
+    max-width: 100%;
+    /* background-color: #F6F6F6; */
+    font-family: sans-serif;
+  }
+    .menu-btn {
+    max-width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #5865f2;
+    color: white;
+    text-align: center;
+  }
+  .nav-side-menu article figure {
+    max-width: 50%;
+  }
+  nav-side-menu article figure img {
+    max-width: 100%;
+  }
+
+  .nav-side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
 }
 
 @media (max-width: 468px) {
   .float-left {
     display: none;
   }
+  .float-right{
+    max-width: 250px;
+  }
+  nav{
+    max-width: 100%;
+    padding: 0;
+  }
+  .logo{
+    margin-left: .7rem;
+  }
   .nav-items {
     display: none;
+  }
+  .btn{
+    padding: 1rem;
+    font-size: 1rem;
   }
   header {
     padding: 0;
@@ -584,9 +668,12 @@ footer article label {
     padding: 1rem 0;
   }
   .float-right {
-    width: 350px;
+    width: 300px;
   }
   footer {
+    padding: 1rem;
+  }
+  .section-four{
     padding: 1rem;
   }
   .section-four img {
@@ -606,5 +693,68 @@ footer article label {
   }
   .section p {
     font-size: 0.5rem;
+  }
+  .section{
+    padding: 1rem;
+  }
+  .blue{
+    font-size: 1.1rem;
+    margin-right: .5rem;
+  }
+  footer article label{
+    font-size: 1rem;
+  }
+    .nav-side-menu {
+    display: flex;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+    .nav-side-menu .fa {
+    font-size: larger;
+    color: black;
+  }
+  .nav-side-menu article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 1rem;
+  }
+  .nav-side-menu ul li {
+    padding: 0.5rem 1rem;
+    max-width: 100%;
+    /* background-color: #F6F6F6; */
+    font-family: sans-serif;
+  }
+    .menu-btn {
+    max-width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #5865f2;
+    color: white;
+    text-align: center;
+  }
+  .nav-side-menu article figure {
+    max-width: 50%;
+  }
+  nav-side-menu article figure img {
+    max-width: 100%;
+  }
+
+  .nav-side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
   }
 }
