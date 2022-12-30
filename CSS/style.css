@@ -86,7 +86,7 @@ ul li {
   width: 160px;
 }
 .login {
-  max-width: 10%;
+  max-width: max-content;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: none;
