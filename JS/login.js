@@ -7,7 +7,7 @@ const guestLogin = document.querySelector(".guest");
 loginArr = [];
 
 window.addEventListener('load', ()=>{
-    fetch("https://user-api-2wzl.onrender.com/")
+    fetch("https://userdata-api.onrender.com")
       .then((res) => res.json())
       .then((data) => loginArr.push(...data));
 })

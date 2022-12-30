@@ -16,8 +16,9 @@
       let genderValue;
       appData = [];
       window.addEventListener('load',()=>{
-        fetch('https://user-api-2wzl.onrender.com/')
-        .then(res => res.json()).then(data=> appData.push(...data))
+        fetch("https://userdata-api.onrender.com")
+          .then((res) => res.json())
+          .then((data) => appData.push(...data));
       })
 
       signUpForm.addEventListener("submit", (e) => {
@@ -98,26 +99,18 @@
         const date = new Date();
         let current = date.toLocaleString();
         let user = {
-          nam: fullName.value,
-          mail: email.value,
+          name: fullName.value,
+          email: email.value,
           id: userId.value,
+          gender: genderValue,
           pass: password.value,
           date: current,
-          gender : genderValue,
-          date : current
         };
 
 
-        fetch('https://user-api-2wzl.onrender.com/', {
+        fetch('https://userdata-api.onrender.com', {
           method:'POST',
-          body: JSON.stringify({
-            name: user.nam,
-            email: user.mail,
-            id: user.id,
-            gender: user.gender,
-            pass : user.pass,
-            date : user.date
-          }),
+          body: JSON.stringify(user),
           headers: {
             "Content-type" : 'application/json'
           }

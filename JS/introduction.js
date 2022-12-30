@@ -38,7 +38,7 @@ function loadEmoji(data) {
 
 let message = [];
 
-fetch("https://message-render.onrender.com")
+fetch("https://chat-api-vyxu.onrender.com")
   .then((res) => res.json())
   .then((data) => message.push(...data))
   .then(() => render())
@@ -86,16 +86,9 @@ chatBox.addEventListener("submit", (e) => {
   };
   message1.push(msg);
   createItem(msg);
-  fetch("https://message-render.onrender.com", {
+  fetch("https://chat-api-vyxu.onrender.com", {
     method: "POST",
-    body: JSON.stringify({
-      id: msg.id,
-      gender: msg.gender,
-      date: msg.date,
-      day: msg.day,
-      hour: msg.hour,
-      message: msg.message,
-    }),
+    body: JSON.stringify(msg),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
