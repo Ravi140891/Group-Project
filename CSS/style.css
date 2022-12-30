@@ -498,6 +498,9 @@ footer article label {
   .section-four img {
     max-width: 100%;
   }
+  .nav-side-menu{
+    display: none;
+  }
 }
 
 @media (min-width: 469px) and (max-width: 774px) {
@@ -612,9 +615,33 @@ footer article label {
     color: black;
     font-size: large;
   }
+  .dico_container{
+    padding: 1rem 2rem;
+  }
+  section .right-section img{
+    margin-left: 6rem;
+  }
+  .nav-side-menu{
+    display: none;
+  }
+  .header-content{
+    display: block;
+  }
+  .header-content .right-section img{
+    margin-left: 5rem;
+  }
 }
 
 @media (max-width: 468px) {
+  .banner_content{
+    padding: 1rem;
+  }
+  .banner{
+    max-height: 60vh;
+  }
+   .dico_container{
+    padding: 1rem;
+  }
   .float-left {
     display: none;
   }

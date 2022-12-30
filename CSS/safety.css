@@ -9,6 +9,7 @@ header{
     padding-top: 3rem;
     align-items: center;
     flex-direction: row;
+    max-width: 100%;
 }
 .left-section{
     color: white;
@@ -22,6 +23,9 @@ header{
     line-height: 1;
     -webkit-transform: scaleY(0.5);
     transform: scaleY(0.8);
+}
+.right-section img{
+    max-width: 100%;
 }
 .sec-para{
     margin: 2rem 0;
@@ -116,4 +120,57 @@ header{
 }
 .moderate{
     margin-top: 3rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+    .page-two{
+        padding: 5rem;
+    }
+}
+
+@media(max-width: 1190px){
+    .page-two{
+        padding: 5rem 1rem;
+    }
+    header{
+        padding: 1rem;
+    }
+    nav{
+        padding: 0;
+        max-width: 100%;
+    }
+    .header-content{
+        display: block;
+        text-align: center;
+    }
+    .left-section{
+        max-width: 100%;
+    }
+    .right-section img{
+        display: none;
+    }
+    .left-section h1{
+        text-align: center;
+    }
+    footer{
+        padding: 1rem;
+    }
+}
+@media (max-width:700px){
+    .safety{
+        display: block;
+    }
+    .safety-left{
+        max-width: 100%;
+        text-align: center;
+    }
+    .safety-right{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+    }
+    .card{
+        max-width: 100%;
+        margin: 1rem 0;
+    }
 }
