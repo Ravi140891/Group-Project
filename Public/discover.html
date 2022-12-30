@@ -27,7 +27,7 @@
               <li><a href="../Public/safety.html">Safety</a></li>
               <li><a href="http://">Support</a></li>
               <li><a href="../Public/blog.html">Blogs</a></li>
-              <li><a href="http://">Careers</a></li>
+              <li><a href="../Public/career.html">Careers</a></li>
             </ul>
           </section>
           <button class="login">
@@ -431,7 +431,7 @@
                   />
                 </clipPath>
               </defs>
-              <script xmlns="" />
+              
             </svg>
           </div>
           <button class="btn signup">
@@ -439,6 +439,18 @@
           </button>
         </section>
       </footer>
+      <script>
+        const barMenu = document.querySelector(".fa-bars");
+        const closeMenu = document.querySelector(".fa-close");
+        const sideMenu = document.querySelector('.nav-side-menu')
+
+        barMenu.addEventListener('click', () =>{
+        sideMenu.style.display = "flex";
+        })
+        closeMenu.addEventListener('click', ()=>{
+        sideMenu.style.display = "none"
+        })
+      </script>
     </div>
   </body>
 </html>
