@@ -8,7 +8,7 @@ body{
 }
 .form-container{
     min-width: 300px;
-    max-width: 500px;
+    max-width: min(500px,50vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,16 +33,20 @@ body{
     margin: .5rem 0;
 }
 .signup-form input[type='text']{
-    width: 350px;
+    max-width: 350px;
+    min-width: 280px;
 }
 .signup-form input[type='email']{
-    width: 350px;
+    max-width: 350px;
+    min-width: 280px;
 }
 .signup-form input[type='number']{
-    width: 350px;
+    max-width: 350px;
+    min-width: 280px;
 }
 .signup-form input[type='password']{
-    width: 350px;
+    max-width: 350px;
+    min-width: 280px;
 }
 .submit-btn{
     margin-top: 1rem;

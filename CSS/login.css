@@ -7,8 +7,8 @@ body{
     text-align: center;
 }
 .form-container{
-    min-width: 400px;
-    max-width: 600px;
+    min-width: 300px;
+    max-width: min(600px,50vw);
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -84,10 +84,10 @@ main a:hover{
     text-decoration: underline;
 }
 .login-form input[type='password']{
-    width: 350px;
+    max-width: 350px;
 }
 .login-form input[type='email']{
-    width: 350px;
+    max-width: 350px;
 }
 .login-flex{
     padding: 0 1rem;
