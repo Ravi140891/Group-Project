@@ -219,10 +219,14 @@ function jumpToAnotherChannel(e){
 function cancelCreationChannel(e){
    e.preventDefault();
    $form.style.display = 'none';
+   $MidGreet.style.display = 'block';
+   $dummyDataEmptyPage.style.display = 'flex';
 }
 function closeForm(e){
    e.preventDefault();
    $form.style.display = 'none';
+   $MidGreet.style.display = 'block';
+   $dummyDataEmptyPage.style.display = 'flex';
 }
 
 // ========================== Function for Form Display to Create New Channel ===========================
@@ -230,6 +234,8 @@ function closeForm(e){
 function textChannelAdd(e){
    e.preventDefault();
    $form.style.display = 'block';
+   $MidGreet.style.display = 'none';
+   $dummyDataEmptyPage.style.display = 'none';
 }
 
 // ========================== Function for Submit Form for New Channel ===========================
