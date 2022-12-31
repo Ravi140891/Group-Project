@@ -84,13 +84,17 @@ main a:hover{
     text-decoration: underline;
 }
 .login-form input[type='password']{
-    max-width: 350px;
+    min-width: 85%;
 }
 .login-form input[type='email']{
-    max-width: 350px;
+    min-width: 85%;
 }
 .login-flex{
     padding: 0 1rem;
+}
+.login-form{
+    min-width: 350px;
+    max-width: 800px;
 }
 .guest{
     width: max-content;
