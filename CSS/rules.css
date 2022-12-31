@@ -619,8 +619,7 @@ margin-bottom: 3vh;
    .input-area{
     width: 100vw;
     right: 0;
-    bottom: 3.5rem;
-    left: -1rem;
+    bottom: 1rem;
   }
   .input-area input{
     min-width: 95%;
