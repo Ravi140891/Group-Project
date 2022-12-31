@@ -152,7 +152,6 @@ document.querySelectorAll('.logo_list_item').forEach((ele)=>{
         ele.querySelector('.serverNameHover').style.display="block";
     })
     ele.addEventListener('mouseout', ()=>{
-        console.log(ele);
         ele.querySelector('.serverNameHover').style.display="none";
     })
 })

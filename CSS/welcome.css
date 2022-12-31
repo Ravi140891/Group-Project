@@ -9,6 +9,12 @@ body{
     overflow: hidden;
     box-sizing: border-box;
 }
+.side-menu{
+    display: none;
+}
+.fa-bars, .fa-close{
+    display: none;
+}
 aside {
   max-width: min(4vw, 70px);
   display: flex;
@@ -312,4 +318,99 @@ a{
   border-radius: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffa880), to(#da1b60));
   box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+}
+
+
+@media (min-width: 1000px) and (max-width: 1450px){
+    .mid-area{
+        padding: 1rem;
+    }
+    .input-area{
+        right: -14rem;
+    }
+}
+
+@media (min-width:750px) and (max-width: 1000px){
+  .right-side{
+    display: none;
+  }
+  .left-side{
+    max-width: 100%;
+  }
+  .fa-bars{
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: .5rem;
+  }
+  .fa-close{
+    color: white;
+    font-size: 30px;
+    padding: .5rem;
+    display: none;
+  }
+  .input-area{
+    width: 100vw;
+    right: 0;
+    bottom: 3.5rem;
+    left: -1rem;
+  }
+  .input-area input{
+    min-width: 95%;
+  }
+  .side-menu{
+    display: none;
+  }
+  aside{
+    display: none;
+  }
+  .channel-sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 749px){
+  .right-side{
+    display: none;
+  }
+  .left-side{
+    max-width: 100%;
+  }
+  aside{
+    display: none;
+  }
+  .fa-bars{
+    color: white;
+    display: block;
+    font-size: 30px;
+    padding: .5rem;
+  }
+  .fa-close{
+    color: white;
+    font-size: 30px;
+    display: none;
+    padding: .5rem;
+  }
+  .side-menu{
+    display: none;
+  }
+  .mid-area{
+    padding: 1rem;
+    height: 100vh;
+  }
+  .channel-sidebar{
+    display: none;
+  }
+  .home-msg .para {
+    font-size: 1rem;
+  }
+   .input-area{
+    width: 100vw;
+    right: 0;
+    bottom: 3.5rem;
+    left: -1rem;
+  }
+  .input-area input{
+    min-width: 95%;
+  }
 }
