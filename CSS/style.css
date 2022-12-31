@@ -501,6 +501,9 @@ footer article label {
   .nav-side-menu{
     display: none;
   }
+  section.section-one{
+    padding: 0 3rem;
+  }
 }
 
 @media (min-width: 469px) and (max-width: 774px) {
