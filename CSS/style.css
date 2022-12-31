@@ -787,4 +787,10 @@ footer article label {
     color: black;
     font-size: large;
   }
+  .nav-side-menu{
+    display: none;
+  }
+  .left-side{
+    overflow-y: scroll;
+  }
 }
