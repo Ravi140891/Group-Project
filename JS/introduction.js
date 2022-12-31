@@ -1,3 +1,11 @@
+let message = [];
+
+fetch("https://chat-api-vyxu.onrender.com")
+  .then((res) => res.json())
+  .then((data) => message.push(...data))
+  .then(() => render())
+  .catch((e) => console.log(e));
+
 const date = new Date();
 let yyyy = date.getFullYear();
 let mm = date.getMonth() + 1;
@@ -36,13 +44,7 @@ function loadEmoji(data) {
   });
 }
 
-let message = [];
 
-fetch("https://chat-api-vyxu.onrender.com")
-  .then((res) => res.json())
-  .then((data) => message.push(...data))
-  .then(() => render())
-  .catch((e) => console.log(e));
 
 let message1 = [];
 Array.prototype.push.apply(message, message1);
@@ -84,7 +86,6 @@ chatBox.addEventListener("submit", (e) => {
     hour: time,
     message: inputMsg.value,
   };
-  message1.push(msg);
   createItem(msg);
   fetch("https://chat-api-vyxu.onrender.com", {
     method: "POST",
@@ -96,12 +97,10 @@ chatBox.addEventListener("submit", (e) => {
     .then(function (response) {
       return response.json();
     })
-    .then(function (data) {
-      console.log(data);
-    })
     .catch((err) => console.log(err));
-  autoScroll();
-  inputMsg.value = "";
+    
+    autoScroll();
+    inputMsg.value = "";
 });
 
 function render() {
