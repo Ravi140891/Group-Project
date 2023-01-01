@@ -574,4 +574,8 @@ a {
   .input-area input{
     min-width: 96%;
   }
+  .home-para{
+    max-height: 80vh;
+    overflow-y: auto;
+  }
 }
